@@ -7,4 +7,10 @@
     .hamburger{
         display: none;
     }
+    .section1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 20px;
+    margin: 0 10px;
+}
 }

@@ -4,25 +4,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="A website where entrepreneurs interact eachother in a Network of Pereira">
+    <meta name="author" content="Martin Lotero Arenas">
+    <title>Martin Lotero Arenas</title>
 
     <!--stylesheets-->
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
+
+    <!--scripts-->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
 </head>
 
 <body>
     <header>
-        <img src="images/piano.svg" alt="piano logo" width="" height="">
-        <span>Piano Site</span>
+        <img src="images/corporate-logo.svg" alt="piano logo" width="" height="">
+        <span>Martin Lotero Arenas</span>
         <button id="ham-btn" class="hamburger"></button>
     </header>
-    <nav></nav>
-    <main></main>
-    <footer></footer>
-    <script src="scripts/navigation.js"></script>
+    <nav>
+        <a id="menu" href="#"></a>
+        <ul class="navigation">
+            <li>
+                <a>Home</a>
+            </li>
+            <li>
+                <a>Chamber Project</a>
+            </li>
+            <li>
+                <a>Final Project</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <section class="section1">
+            <div>
+                <h2>About me</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis asperiores cupiditate, maiores
+                    molestiae incidunt commodi quasi cum, illum inventore nam quod magnam voluptatum necessitatibus.
+                    Odit esse harum assumenda est impedit!</p>
+            </div>
+            <div>
+                <h2>Student Photo</h2>
+                <div class="student-photo">
+                    <img src="images/corporate-logo.svg" alt="student photo" width="240">
+                </div>
+            </div>
+        </section>
+        <section class="section2">
+            <h2>Web Certificate Courses</h2>
+            <ul class="generalCourses">
+                <li>
+                    <a>ALL</a>
+                </li>
+                <li>
+                    <a>CSE</a>
+                </li>
+                <li>
+                    <a>WDD</a>
+                </li>
+            </ul>
+            <ul class="specificCourses">
+                <li>
+                    <a>WDD 130</a>
+                </li>
+                <li>
+                    <a>WDD 131</a>
+                </li>
+                <li>
+                    <a>WDD 231</a>
+                </li>
+            </ul>
+            <P>The total credits listed above is 6</P>
+        </section>
+        <section>
+            <div class="logos-container">
+                <img src="images/corporate-logo.svg" alt="linkdin" width="70">
+                <img src="images/corporate-logo.svg" alt="github" width="70">
+                <img src="images/corporate-logo.svg" alt="X" width="70">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>
+            ©
+            <span id="year"></span>
+            Martin Lotero Arenas
+            Pereira Colombia
+        </p>
+        <p>last modification:
+            <span id="lastModified"></span>
+        </p>
+    </footer>
 </body>
-<!--assadfasd-->
 
 </html>
