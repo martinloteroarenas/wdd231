@@ -1,34 +1,36 @@
 /*------------------------Site wide---------------------*/
 :root {
     --color1: #490139;
-    --color2: #df0371;
     --backgroundColor1: #ffe7e7;
-    --backgroundColor2: black;
     --fontfamily: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 * {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     box-sizing: border-box;
 }
+
 /*-------------------------Header-----------------------*/
 header {
     display: grid;
     grid-template-columns: 24px auto 44px;
     padding: 5px 0 5px 10px;
     align-items: end;
-    border-bottom: solid 1px #ddd;
     column-gap: 8px;
 }
+
 header img {
     display: block;
     width: 100%;
     height: auto;
     padding: 0 0 3px 0;
 }
+
 header span {
     font-size: 1.2rem;
     color: var(--color1);
 }
+
 /*----------------------------------main----------------------------------*/
 
 /*--------------------------Hamburger Navigation-----------------------------*/
@@ -38,36 +40,44 @@ header span {
     color: var(--color1);
     cursor: pointer;
 }
+
 .hamburger::before {
     content: "\2630";
     font-weight: 900;
 }
+
 .hamburger.show::before {
     content: "\00D7";
     font-weight: 900;
 }
+
 /*---------------------------Navigation------------------------------------*/
 nav {
     background-color: var(--color1);
     color: var(--backgroundColor1);
 }
+
 nav ul {
     display: grid;
     grid-template-columns: 70px 160px 160px;
     padding: 0 0 0 10px;
 }
+
 nav li {
     list-style: none;
     padding: 6px;
 }
+
 /*-----------------------------H1-------------------------------------*/
 h1 {
     margin: 20px 0 20px 10px;
 }
+
 /*----------------------------------section 1-----------------------------*/
 .section1 {
     margin: 0 10px;
 }
+
 .section1 div h2 {
     background-color: var(--color1);
     color: var(--backgroundColor1);
@@ -75,16 +85,21 @@ h1 {
     padding: 6px;
     text-align: center;
 }
+
 .section1 div {
     background-color: var(--backgroundColor1);
 }
-.section1 div p,img {
+
+.section1 div p,
+img {
     padding: 10px;
 }
-.student-photo{
+
+.student-photo {
     display: flex;
     justify-content: center;
 }
+
 /*--------------------------------section 2-----------------------------------*/
 .section2 h2 {
     background-color: var(--color1);
@@ -93,19 +108,23 @@ h1 {
     text-align: center;
     margin-bottom: 6px;
 }
+
 .generalCourses,
 .specificCourses {
     list-style: none;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
+
 .section2 a {
     padding: 10px;
     text-align: center;
 }
+
 .section2 p {
     text-align: center;
 }
+
 .section2 li {
     text-align: center;
     background-color: var(--backgroundColor1);
@@ -114,15 +133,22 @@ h1 {
     border-radius: 6px;
     border: var(--color1) solid 1px;
 }
+
 .section2 ul {
     margin: 0;
     padding: 4px;
 }
+
 /*--------------------------------section 3-----------------------------------*/
 .logos-container {
     display: flex;
     justify-content: center;
 }
+
+.section3 h2 {
+    text-align: center;
+}
+
 /*---------------------------------------------footer--------------------------*/
 footer {
     background-color: var(--backgroundColor1);
