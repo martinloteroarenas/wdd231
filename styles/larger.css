@@ -34,4 +34,8 @@
     a {
         font-size: large;
     }
+
+    nav ul li .current {
+        background-color: #000000;
+    }
 }
