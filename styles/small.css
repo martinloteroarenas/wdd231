@@ -23,7 +23,7 @@ header img {
     display: block;
     width: 100%;
     height: auto;
-    padding: 0 0 3px 0;
+    padding: 0 0 0 0;
 }
 
 header span {
@@ -44,6 +44,7 @@ header span {
 .hamburger::before {
     content: "\2630";
     font-weight: 900;
+    font-size: x-large;
 }
 
 .hamburger.show::before {
@@ -61,11 +62,20 @@ nav ul {
     display: grid;
     grid-template-columns: 70px 160px 160px;
     padding: 0 0 0 10px;
+    margin: 10px 0 16px 0;
 }
 
 nav li {
     list-style: none;
     padding: 6px;
+}
+
+#hide-menu {
+    display: none;
+}
+
+#hide-menu.show-menu {
+    display: block;
 }
 
 /*-----------------------------H1-------------------------------------*/
