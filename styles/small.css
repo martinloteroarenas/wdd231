@@ -60,9 +60,10 @@ nav {
 
 nav ul {
     display: grid;
-    grid-template-columns: 70px 160px 160px;
+    grid-template-columns: 0.4fr 1fr 1fr;
     padding: 0 0 0 10px;
     margin: 10px 0 16px 0;
+    gap: 20px;
 }
 
 nav li {
@@ -76,6 +77,12 @@ nav li {
 
 #hide-menu.show-menu {
     display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    font-size: x-large;
 }
 
 /*-----------------------------H1-------------------------------------*/
