@@ -88,6 +88,11 @@ a {
     text-decoration: none;
     font-size: x-large;
     padding: 2px 2px;
+    display: block;
+}
+
+#menu {
+    padding: 0;
 }
 
 .current {
