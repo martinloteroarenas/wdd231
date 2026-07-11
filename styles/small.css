@@ -171,6 +171,12 @@ img {
     padding: 4px;
 }
 
+.generalCourses li a,
+.specificCourses li a {
+    font-size: medium;
+    font-weight: 600;
+}
+
 /*--------------------------------section 3-----------------------------------*/
 .logos-container {
     display: flex;
