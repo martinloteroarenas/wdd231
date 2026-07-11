@@ -86,7 +86,7 @@ nav li:hover {
 a {
     color: inherit;
     text-decoration: none;
-    font-size: x-large;
+    font-size: larger;
     padding: 2px 2px;
     display: block;
 }
@@ -105,12 +105,12 @@ h1 {
     margin: 20px 0 20px 10px;
 }
 
-/*----------------------------------section 1-----------------------------*/
-.section1 {
+/*--------------------------main-div section 1-----------------------------*/
+.main-div {
     margin: 0 10px;
 }
 
-.section1 div h2 {
+.main-div section h2 {
     background-color: var(--color1);
     color: var(--backgroundColor1);
     margin: 0;
@@ -118,11 +118,11 @@ h1 {
     text-align: center;
 }
 
-.section1 div {
+.main-div section {
     background-color: var(--backgroundColor1);
 }
 
-.section1 div p,
+.main-div section p,
 img {
     padding: 10px;
 }
@@ -178,16 +178,17 @@ img {
 }
 
 /*--------------------------------section 3-----------------------------------*/
-.logos-container {
-    display: flex;
-    justify-content: center;
-}
 
 .section3 h2 {
     text-align: center;
 }
 
 /*---------------------------------------------footer--------------------------*/
+.logos-container {
+    display: flex;
+    justify-content: center;
+}
+
 footer {
     background-color: var(--backgroundColor1);
     text-align: center;

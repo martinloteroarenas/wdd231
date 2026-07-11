@@ -29,41 +29,43 @@
 
 <body>
     <header>
-        <img src="favicon.ico" alt="piano logo">
+        <img src="images/market-logo.svg" alt="market logo">
         <span>Martin Lotero Arenas</span>
         <button id="ham-btn" class="hamburger" aria-label="open navigation menu"></button>
     </header>
-    <nav id="hide-menu">
-        <a id="menu" href="#" aria-label="open navigation menu"></a>
-        <ul class="navigation">
-            <li class="current">
-                <a href="#">Home</a>
-            </li>
-            <li>
-                <a href="#">Chamber Project</a>
-            </li>
-            <li>
-                <a href="#">Final Project</a>
-            </li>
-        </ul>
-    </nav>
     <main>
+        <nav id="hide-menu">
+            <a id="menu" href="#" aria-label="open navigation menu"></a>
+            <ul class="navigation">
+                <li class="current">
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="#">Chamber Project</a>
+                </li>
+                <li>
+                    <a href="#">Final Project</a>
+                </li>
+            </ul>
+        </nav>
         <h1>Home</h1>
-        <section class="section1">
-            <div>
+
+        <div class="main-div">
+            <section class="section1">
                 <h2>About me</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis asperiores cupiditate, maiores
                     molestiae incidunt commodi quasi cum, illum inventore nam quod magnam voluptatum necessitatibus.
                     Odit esse harum assumenda est impedit!</p>
-            </div>
-            <div>
+            </section>
+            <section class="section2">
                 <h2>Student Photo</h2>
                 <div class="student-photo">
                     <img src="images/student-photo.jpg" alt="student photo" width="240">
                 </div>
-            </div>
-        </section>
-        <section class="section2">
+            </section>
+        </div>
+
+        <section class="section3">
             <h2>Web Certificate Courses</h2>
             <ul class="generalCourses">
                 <li>
@@ -91,14 +93,12 @@
         </section>
     </main>
     <footer>
-        <section class="section3">
-            <h2>Social Media</h2>
-            <div class="logos-container">
-                <img src="images/linkedin.svg" alt="linkdin" width="70">
-                <img src="images/github.svg" alt="github" width="70">
-                <img src="images/facebook.svg" alt="X" width="70">
-            </div>
-        </section>
+        <h2>Social Media</h2>
+        <div class="logos-container">
+            <img src="images/linkedin.svg" alt="linkdin" width="70">
+            <img src="images/github.svg" alt="github" width="70">
+            <img src="images/facebook.svg" alt="X" width="70">
+        </div>
         <p>
             ©
             <span id="year"></span>
