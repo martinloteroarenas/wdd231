@@ -99,7 +99,7 @@ function displayCourses(filteredCourses) {
         let name = document.createElement('h3');
 
         if (course.completed == true) {
-            name.textContent = `✓${course.subject} ${course.number}`;
+            name.textContent = `${course.subject} ${course.number} ✓`;
         }
         else {
             name.textContent = `${course.subject} ${course.number}`;
