@@ -5,6 +5,7 @@
     --blackcolor: #000000;
     --greencolor: #014d01;
     --fontfamily: 'roboto', Verdana, Geneva, Tahoma, sans-serif;
+    --whitecolor: #ffffff;
 }
 
 * {
@@ -41,6 +42,7 @@ header span {
     border: none;
     color: var(--color1);
     cursor: pointer;
+    background-color: var(--whitecolor);
 }
 
 .hamburger::before {

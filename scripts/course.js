@@ -93,22 +93,24 @@ const btnWdd = document.querySelector('#wdd');
 function displayCourses(filteredCourses) {
     coursesDisplay.innerHTML = "";
 
-    let totalCredits = 0;
-
     filteredCourses.forEach(course => {
-
-        totalCredits += course.credits;
 
         let card = document.createElement('section');
         let name = document.createElement('h3');
 
-        name.textContent = `${course.subject} ${course.number}`;
+        if (course.completed == true) {
+            name.textContent = `✓${course.subject} ${course.number}`;
+        }
+        else {
+            name.textContent = `${course.subject} ${course.number}`;
+        }
 
         card.appendChild(name);
         coursesDisplay.appendChild(card);
     });
+    const totalCredits = filteredCourses.reduce((sum, course) => sum + course.credits, 0);
     totalCreditsSpan.textContent = totalCredits;
-}   
+}
 
 
 
