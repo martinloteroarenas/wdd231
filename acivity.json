@@ -1,0 +1,23 @@
+{
+    "family": "smith",
+    "date_transfer": "12/03/05",
+    "numMembers": 3,
+    "visited": false,
+    "family_members": [
+        {
+            "name": "joseph",
+            "gender": "male",
+            "birthday": "11/10/05"
+        },
+        {
+            "name": "emma",
+            "gender": "female",
+            "birthday": "02/05/33"
+        },
+        {
+            "name": "john",
+            "gender": "male",
+            "birthday": "04/04/12"
+        }
+    ]
+}
