@@ -1,0 +1,102 @@
+@media only screen and (min-width: 40rem) {
+    :root {
+        --color1: #490139;
+        --backgroundColor1: #ffe7e7;
+        --blackcolor: #000000;
+        --greencolor: #014d01;
+        --fontfamily: 'roboto', Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    /*------------------------------header----------------------------------*/
+    header div nav ul li a {
+        padding: 0 10px;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 24px auto 0.6fr;
+        padding: 10px 0 16px 10px;
+        align-items: end;
+        column-gap: 8px;
+        background-color: var(--color1);
+    }
+
+    nav ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin: 0;
+        column-gap: 20px;
+    }
+
+    header img {
+        display: block;
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+
+    header span {
+        font-size: 1.2rem;
+        color: var(--whitecolor);
+    }
+
+    nav ul li {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+    }
+
+    li a {
+        text-decoration: none;
+        color: var(--whitecolor);
+        display: block;
+        width: 100%;
+    }
+
+    /*------------------footer--------------------------*/
+    footer {
+        background-color: var(--backgroundColor1);
+        text-align: center;
+        padding: 2px 0;
+        display: block;
+        max-width: 100%;
+    }
+
+    footer section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .logos-container {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .logos-container img {
+        width: 30%;
+        height: auto;
+        margin: 20px 0;
+        max-width: 88px;
+    }
+
+    footer h3,
+    footer p,
+    footer span {
+        width: 100%;
+        box-sizing: border-box;
+        word-wrap: break-word
+    }
+
+    /*------------------------navigation and ham-----------------------*/
+    .hamburger {
+        display: none;
+    }
+
+    #hide-menu {
+        display: block;
+    }
+
+    .current {
+        background-color: var(--blackcolor);
+    }
+}

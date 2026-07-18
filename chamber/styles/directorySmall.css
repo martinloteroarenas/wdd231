@@ -1,0 +1,103 @@
+:root {
+    --fontfamily: 'roboto', Verdana, 'Geneva', Tahoma, sans-serif;
+    --color1: #490139;
+    --backgroundColor1: #ffe7e7;
+    --blackcolor: #000000;
+    --bluecolor: #120075;
+    --whitecolor: #ffffff;
+    --fontfamily: 'roboto', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+* {
+    font-family: 'roboto', sans-serif;
+    box-sizing: border-box;
+}
+/*--------------------------Hamburger Navigation-----------------------------*/
+.hamburger {
+    background: none;
+    border: none;
+    color: var(--whitecolor);
+    cursor: pointer;
+    background-color: var(--color1);
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-weight: 900;
+    font-size: xx-large;
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+    font-weight: 900;
+}
+/*-----------------Header------------------------------------*/
+header {
+    display: grid;
+    grid-template-columns: 24px auto 0.6fr;
+    padding: 10px 0 16px 10px;
+    align-items: end;
+    column-gap: 8px;
+    background-color: var(--color1);
+}
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 0;
+}
+
+header span {
+    font-size: 1.2rem;
+    color: var(--whitecolor);
+}
+
+#hide-menu {
+    display: none;
+}
+
+#hide-menu.show-menu {
+    display: block;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+ul li{
+    list-style: none;
+}
+li a{
+    text-decoration: none;
+    color: var(--whitecolor);
+    padding: 20px 20px;
+}
+/*----------------------body-------------------------*/
+h1 {
+    padding-left: 10px;
+}
+
+/*---------------footer----------------------------*/
+footer {
+    background-color: var(--backgroundColor1);
+    text-align: center;
+    padding: 2px 0;
+    display: block;
+    max-width: 100%;
+}
+
+.logos-container {
+    display: flex;
+    justify-content: space-around;
+}
+.logos-container img{
+    width: 30%; 
+    height: auto;
+    margin: 20px 0;
+    max-width: 88px;
+}
+footer h3, footer p, footer span{
+    width: 100%;
+    box-sizing: border-box;
+    word-wrap: break-word
+}
