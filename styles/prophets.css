@@ -1,0 +1,26 @@
+main div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+section {
+    padding: 10px;
+    margin: 10px;
+    background-color: #f2e6ff;
+}
+
+section h2 {
+    margin: 0 0 10px 0;
+    text-align: center;
+    color: #5e0361;
+}
+
+section img {
+    max-width: 100%;
+}
+
+section p {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 4px;
+}
