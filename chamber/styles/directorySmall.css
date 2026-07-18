@@ -12,6 +12,7 @@
     font-family: 'roboto', sans-serif;
     box-sizing: border-box;
 }
+
 /*--------------------------Hamburger Navigation-----------------------------*/
 .hamburger {
     background: none;
@@ -31,6 +32,7 @@
     content: "\00D7";
     font-weight: 900;
 }
+
 /*-----------------Header------------------------------------*/
 header {
     display: grid;
@@ -40,6 +42,7 @@ header {
     column-gap: 8px;
     background-color: var(--color1);
 }
+
 header img {
     display: block;
     width: 100%;
@@ -59,19 +62,36 @@ header span {
 #hide-menu.show-menu {
     display: block;
 }
-ul{
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
+
+header>div {
+    grid-column: 1 / -1;
+    width: 89%;
 }
-ul li{
+
+li {
     list-style: none;
+    display: flex;
+    justify-content: center;
 }
-li a{
+
+li a {
     text-decoration: none;
     color: var(--whitecolor);
-    padding: 20px 20px;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    font-weight: 600;
+    border-bottom: #ffe7e7 1px solid;
 }
+
+nav li :hover {
+    background-color: var(--bluecolor);
+}
+
+.current {
+    background-color: var(--blackcolor);
+}
+
 /*----------------------body-------------------------*/
 h1 {
     padding-left: 10px;
@@ -90,13 +110,17 @@ footer {
     display: flex;
     justify-content: space-around;
 }
-.logos-container img{
-    width: 30%; 
+
+.logos-container img {
+    width: 30%;
     height: auto;
     margin: 20px 0;
     max-width: 88px;
 }
-footer h3, footer p, footer span{
+
+footer h3,
+footer p,
+footer span {
     width: 100%;
     box-sizing: border-box;
     word-wrap: break-word

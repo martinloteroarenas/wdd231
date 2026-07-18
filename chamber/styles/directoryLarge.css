@@ -76,7 +76,7 @@
         width: 30%;
         height: auto;
         margin: 20px 0;
-        max-width: 88px;
+        max-width: 80px;
     }
 
     footer h3,
@@ -98,5 +98,14 @@
 
     .current {
         background-color: var(--blackcolor);
+    }
+
+    header>div {
+        grid-column: auto;
+        width: auto;
+    }
+
+    nav ul li a {
+        border: none;
     }
 }
