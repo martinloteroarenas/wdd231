@@ -3,7 +3,7 @@
     --color1: #490139;
     --backgroundColor1: #ffe7e7;
     --blackcolor: #000000;
-    --greencolor: #014d01;
+    --bluecolor: #0b0072;
     --fontfamily: 'roboto', Verdana, Geneva, Tahoma, sans-serif;
     --whitecolor: #ffffff;
 }
@@ -84,7 +84,7 @@ nav li {
 }
 
 nav li:hover {
-    background-color: var(--greencolor);
+    background-color: var(--bluecolor);
 }
 
 a {
