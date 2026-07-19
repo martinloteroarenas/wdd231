@@ -21,3 +21,23 @@
         }
     ]
 }
+
+
+
+{
+  "ciudad": "Pereira",
+  "habitantes": 500000,
+  "barrios": ["Pinares", "Alsacia", "Maraya"],
+  "proyectos": [
+    {
+      "id": 1,
+      "nombre": "Vía 30 de Agosto",
+      "estado": "En progreso"
+    },
+    {
+      "id": 2,
+      "nombre": "Aeropuerto Matecaña",
+      "estado": "Finalizado"
+    }
+  ]
+}

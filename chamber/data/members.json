@@ -1,0 +1,60 @@
+{
+    "members": [
+        {
+            "name": "chucky barber shop",
+            "address": "av 12 str 32",
+            "number": "3673567298",
+            "url": "https://chuckybarbershop.com",
+            "image": "../chamber/images/barber-shop.jpg",
+            "membershipLevel": 2
+        },
+        {
+            "name": "jhonny icecream",
+            "address": "av 3 str 22",
+            "number": "3673544798",
+            "url": "https://jhonnyIcecream.com",
+            "image": "../chamber/images/icecream.jpg",
+            "membershipLevel": 1
+        },
+        {
+            "name": "pet shop",
+            "address": "av 45 str 7",
+            "number": "3759046712",
+            "url": "https://petshop.com",
+            "image": "../chamber/images/pet-shop.jpg",
+            "membershipLevel": 3
+        },
+        {
+            "name": "gamer cave",
+            "address": "av 34 str 9",
+            "number": "3245878712",
+            "url": "https://gamerCave.com",
+            "image": "../chamber/images/gamer-cave.jpg",
+            "membershipLevel": 3
+        },
+        {
+            "name": "just crepes",
+            "address": "av 5 str 21",
+            "number": "3256879002",
+            "url": "https://justCrepes.com",
+            "image": "../chamber/images/crepes.jpg",
+            "membershipLevel": 2
+        },
+        {
+            "name": "down clothes",
+            "address": "av 25 str 12",
+            "number": "3465541772",
+            "url": "https://downClothes.com",
+            "image": "../chamber/images/clothes.jpg",
+            "membershipLevel": 2
+        },
+        {
+            "name": "juan skateshop",
+            "address": "av 11 str 20",
+            "number": "3290996721",
+            "url": "https://juanSkateshop.com",
+            "image": "../chamber/images/skateshop.jpg",
+            "membershipLevel": 1
+        }
+    ]
+}
