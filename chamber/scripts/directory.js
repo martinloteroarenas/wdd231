@@ -44,3 +44,28 @@ const displayMembers = (members) => {
 }
 
 getMembersData(json);
+
+/*-----------aca va lo de las cards para ser list o grid--------------*/
+const listButton = document.querySelector('#list');
+const gridButton = document.querySelector('#grid');
+const cardsFormat = document.querySelector('#cards');
+
+listButton.classList.add('current');
+
+listButton.addEventListener('click', (e) => {
+    e.preventDefault()
+
+    listButton.classList.add('current');
+    gridButton.classList.remove('current');
+
+    cardsFormat.classList.remove('build-grid');
+});
+
+gridButton.addEventListener('click', (e) => {
+    e.preventDefault();
+    
+    gridButton.classList.add('current');
+    listButton.classList.remove('current');
+    
+    cardsFormat.classList.add('build-grid');
+});
