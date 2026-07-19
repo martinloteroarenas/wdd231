@@ -153,6 +153,11 @@ p {
     background-color: var(--blackcolor);
 }
 
+#cards {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
 /*---------------footer----------------------------*/
 footer {
     background-color: var(--backgroundColor1);
