@@ -9,7 +9,7 @@
 }
 
 * {
-    font-family: 'roboto', sans-serif;
+    font-family: var(--fontfamily);
     box-sizing: border-box;
 }
 

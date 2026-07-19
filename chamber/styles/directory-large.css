@@ -1,5 +1,6 @@
 @media only screen and (min-width: 40rem) {
     :root {
+        --fontfamily: 'roboto', Verdana, 'Geneva', Tahoma, sans-serif;
         --color1: #490139;
         --backgroundColor1: #ffe7e7;
         --blackcolor: #000000;
