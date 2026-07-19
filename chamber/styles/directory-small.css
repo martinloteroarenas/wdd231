@@ -149,7 +149,7 @@ p {
 }
 
 .toggle .current {
-    background-color: var(--bluecolor);
+    background-color: var(--blackcolor);
 }
 
 /*---------------footer----------------------------*/
