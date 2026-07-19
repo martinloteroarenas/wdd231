@@ -114,8 +114,9 @@ h1 {
 
 .card-container {
     background-color: var(--backgroundColor1);
-    max-width: 360px;
+    max-width: 300px;
     margin: 10px auto;
+    border-radius: 16px;
 }
 
 img.member-img,
