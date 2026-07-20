@@ -31,6 +31,7 @@ const displayMembers = (members) => {
         portrait.classList.add('member-img');
         portrait.setAttribute('width', '300');
         portrait.setAttribute('height', '300');
+        portrait.setAttribute('alt', `Image of ${member.name}`);
 
         card.classList.add('card-container');
 
