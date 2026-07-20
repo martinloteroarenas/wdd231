@@ -25,18 +25,19 @@
     <script src="../chamber/scripts/directory-navigation.js" defer></script>
 
     <!--styles-->
-    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../chamber/styles/normalize.css">
     <link rel="stylesheet" href="../chamber/styles/directory-small.css">
-    <link rel="stylesheet" href="../chamber/styles/directory-large.css">
+    <link rel="stylesheet" href="../chamber/styles/directory-large.css" media="print" onload="this.media='all'">
     <!--fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" media="print" onload="this.media='all'">
 </head>
 
 <body>
     <header>
-        <img src="../chamber/images/network.svg" alt="network logo">
+        <img src="../chamber/images/network.svg" alt="network logo" width="24" height="24" loading="eager">
         <span>Pereira Chamber Of Commerce</span>
         <button id="ham-btn" class="hamburger" aria-label="open navigation menu"></button>
         <div>

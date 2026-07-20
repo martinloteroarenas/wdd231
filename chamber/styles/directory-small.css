@@ -156,6 +156,7 @@ p {
 #cards {
     max-width: 1000px;
     margin: 0 auto;
+    min-height: 400px;
 }
 
 /*---------------footer----------------------------*/
@@ -173,10 +174,11 @@ footer {
 }
 
 .logos-container img {
-    width: 30%;
+    width: 100%;
+    max-width: 70px;
     height: auto;
+    aspect-ratio: 1 / 1;
     margin: 20px 0;
-    max-width: 88px;
 }
 
 footer h3,

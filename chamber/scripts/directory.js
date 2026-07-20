@@ -11,7 +11,7 @@ async function getMembersData(json) {
 
 const displayMembers = (members) => {
     cards.innerHTML = '';
-    members.forEach(member => {
+    members.forEach((member, index) => {
         let card = document.createElement('section');
         let businessName = document.createElement('h2');
         let portrait = document.createElement('img');
@@ -27,7 +27,13 @@ const displayMembers = (members) => {
         membership.textContent = `Membership Level: ${member.membershipLevel}`;
 
         portrait.setAttribute('src', member.image);
-        portrait.setAttribute('loading', 'lazy');
+        if (index === 0) {
+            portrait.setAttribute('fetchpriority', 'high');
+            portrait.setAttribute('loading', 'eager');
+        }
+        else {
+            portrait.setAttribute('loading', 'lazy');
+        }
         portrait.classList.add('member-img');
         portrait.setAttribute('width', '300');
         portrait.setAttribute('height', '300');
