@@ -80,13 +80,17 @@
         word-wrap: break-word
     }
 
+    footer section div {
+        padding: 20px;
+    }
+
     /*------------------------navigation and ham-----------------------*/
     .hamburger {
-        display: none;
+        display: none !important;
     }
 
     #hide-menu {
-        display: block;
+        display: block !important;
     }
 
     .current {

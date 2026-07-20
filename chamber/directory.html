@@ -27,7 +27,7 @@
     <!--styles-->
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="../chamber/styles/directory-small.css">
-    <link rel="stylesheet" href="../chamber/styles/directory-large.css">
+    <link rel="stylesheet" href="../chamber/styles/directory-large.css" media="print" onload="this.media='all'">
     <!--fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -63,8 +63,12 @@
     </header>
     <main>
         <h1>Directory</h1>
-        <div class="toggle"><a id="list" href="#">LIST</a><a id="grid" href="#">GRID</a></div>
-        <div id="cards"></div>
+        <div class="toggle">
+            <a id="list" href="#">LIST</a>
+            <a id="grid" href="#">GRID</a>
+        </div>
+        <div id="cards">
+        </div>
     </main>
     <footer>
         <section>
@@ -74,9 +78,9 @@
                 <p>(+57)3244602376</p>
             </div>
             <div class="logos-container">
-                <img src="images/linkedin.svg" alt="linkdin" width="70">
-                <img src="images/github.svg" alt="github" width="70">
-                <img src="images/facebook.svg" alt="X" width="70">
+                <img src="images/linkedin.svg" alt="linkdin" width="70" loading="lazy">
+                <img src="images/github.svg" alt="github" width="70" loading="lazy">
+                <img src="images/facebook.svg" alt="facebook" width="70" loading="lazy">
             </div>
             <div>
                 <p>WDD231 Class Project</p>

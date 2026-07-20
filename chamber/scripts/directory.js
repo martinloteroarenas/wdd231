@@ -29,6 +29,8 @@ const displayMembers = (members) => {
         portrait.setAttribute('src', member.image);
         portrait.setAttribute('loading', 'lazy');
         portrait.classList.add('member-img');
+        portrait.setAttribute('width', '300');
+        portrait.setAttribute('height', '300');
 
         card.classList.add('card-container');
 
@@ -63,9 +65,9 @@ listButton.addEventListener('click', (e) => {
 
 gridButton.addEventListener('click', (e) => {
     e.preventDefault();
-    
+
     gridButton.classList.add('current');
     listButton.classList.remove('current');
-    
+
     cardsFormat.classList.add('build-grid');
 });

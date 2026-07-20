@@ -5,7 +5,7 @@
             "address": "av 12 str 32",
             "number": "3673567298",
             "url": "https://chuckybarbershop.com",
-            "image": "../chamber/images/barber-shop.jpg",
+            "image": "../chamber/images/barber-shop.webp",
             "membershipLevel": 2
         },
         {
@@ -13,7 +13,7 @@
             "address": "av 3 str 22",
             "number": "3673544798",
             "url": "https://jhonnyIcecream.com",
-            "image": "../chamber/images/icecream.jpg",
+            "image": "../chamber/images/icecream.webp",
             "membershipLevel": 1
         },
         {
@@ -21,7 +21,7 @@
             "address": "av 45 str 7",
             "number": "3759046712",
             "url": "https://petshop.com",
-            "image": "../chamber/images/pet-shop.jpg",
+            "image": "../chamber/images/pet-shop.webp",
             "membershipLevel": 3
         },
         {
@@ -29,7 +29,7 @@
             "address": "av 34 str 9",
             "number": "3245878712",
             "url": "https://gamerCave.com",
-            "image": "../chamber/images/gamer-cave.jpg",
+            "image": "../chamber/images/gamer-cave.webp",
             "membershipLevel": 3
         },
         {
@@ -37,7 +37,7 @@
             "address": "av 5 str 21",
             "number": "3256879002",
             "url": "https://justCrepes.com",
-            "image": "../chamber/images/crepes.jpg",
+            "image": "../chamber/images/crepes.webp",
             "membershipLevel": 2
         },
         {
@@ -45,7 +45,7 @@
             "address": "av 25 str 12",
             "number": "3465541772",
             "url": "https://downClothes.com",
-            "image": "../chamber/images/clothes.jpg",
+            "image": "../chamber/images/clothes.webp",
             "membershipLevel": 2
         },
         {
@@ -53,7 +53,7 @@
             "address": "av 11 str 20",
             "number": "3290996721",
             "url": "https://juanSkateshop.com",
-            "image": "../chamber/images/skateshop.jpg",
+            "image": "../chamber/images/skateshop.webp",
             "membershipLevel": 1
         }
     ]
