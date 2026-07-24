@@ -66,12 +66,12 @@
     }
 
     .logos-container img {
-    width: 100%;
-    max-width: 70px;
-    height: auto;
-    aspect-ratio: 1 / 1;
-    margin: 20px 0;
-}
+        width: 100%;
+        max-width: 70px;
+        height: auto;
+        aspect-ratio: 1 / 1;
+        margin: 20px 0;
+    }
 
     footer h3,
     footer p,
@@ -105,5 +105,12 @@
 
     nav ul li a {
         border: none;
+    }
+
+    /*----------------------------HOME PAGE-------------------------------*/
+    #spotlights-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 90%;
     }
 }

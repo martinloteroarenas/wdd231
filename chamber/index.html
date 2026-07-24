@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="A website where entrepreneurs interact eachother in a Network of Pereira">
+    <meta name="description"
+        content="the homepage of a website where entrepreneurs interact eachother in a Network of Pereira">
     <meta name="author" content="Martin Lotero Arenas">
-    <title>Pereira Chamber of Commerce - Directory</title>
+    <title>Pereira Chamber of Commerce - Home page</title>
 
     <link rel="icon" href="../chamber/network.ico">
 
@@ -20,7 +21,7 @@
     <meta property="og:url" content="https://www.facebook.com" />
 
     <!--scripts-->
-    <script src="../chamber/scripts/directory.js" defer></script>
+    <script src="../chamber/scripts/homepage.js" defer></script>
     <script src="../chamber/scripts/date.js" defer></script>
     <script src="../chamber/scripts/directory-navigation.js" defer></script>
 
@@ -44,11 +45,11 @@
             <nav id="hide-menu">
                 <a id="menu" href="#" aria-label="open navigation menu"></a>
                 <ul class="navigation">
-                    <li>
-                        <a href="../chamber/index.html">Home</a>
-                    </li>
                     <li class="current">
-                        <a href="#">Directory</a>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="../chamber/directory.html">Directory</a>
                     </li>
                     <li>
                         <a href="../chamber/join.html">Join</a>
@@ -62,12 +63,32 @@
 
     </header>
     <main>
-        <h1>Directory</h1>
-        <div class="toggle">
-            <a id="list" href="#">LIST</a>
-            <a id="grid" href="#">GRID</a>
-        </div>
-        <div id="cards">
+        <h1>Home</h1>
+        <section class="hero-container">
+            <img src="/chamber/images/hero-pereira.webp" alt="landscape of pereira city" loading="lazy">
+            <div class="hero-text">
+                <a href="#">REGISTER NOW</a>
+                <p>Join our community to grow your business!</p>
+            </div>
+        </section>
+        <div class="home-sections">
+            <section class="current-events">
+                <h2>Events</h2>
+            </section>
+            <section class="spotlights">
+                <h2>Member Spotlights</h2>
+                <div id="spotlights-container"></div>
+            </section>
+            <section class="weather">
+                <h2>Weather</h2>
+                <p>The temperature in Pereira, Colombia is <span id="current-temp"></span></p>
+                <figure>
+                    <img id="weather-icon" src="" alt="">
+                    <figcaption></figcaption>
+                </figure>
+                <p>forecast:</p>
+                <ul id="forecast"></ul>
+            </section>
         </div>
     </main>
     <footer>

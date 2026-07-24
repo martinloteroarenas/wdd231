@@ -89,6 +89,7 @@ nav li :hover {
 
 .current {
     background-color: var(--blackcolor);
+    border-bottom: var(--bluecolor) 3px solid;
 }
 
 /*----------------------body-------------------------*/
@@ -187,4 +188,105 @@ footer span {
     width: 100%;
     box-sizing: border-box;
     word-wrap: break-word
+}
+
+/*---------------------------------HOME PAGE-------------------------*/
+.hero-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 4px;
+}
+
+.hero-container img {
+    border-radius: 30px;
+    width: 100%;
+    height: auto;
+    margin: 10px;
+}
+
+.hero-text {
+    position: absolute;
+    text-align: center;
+    top: 20%;
+    max-width: 260px;
+}
+
+.hero-text a {
+    background-color: var(--color1);
+    margin: 0;
+    border-radius: 10px;
+    font-weight: bolder;
+    font-size: x-large;
+    padding: 6px;
+    text-decoration: none;
+    color: var(--whitecolor);
+}
+
+.hero-text p {
+    background-color: var(--backgroundColor1);
+    border-radius: 6px;
+    margin: 10px;
+    padding: 2px;
+    font-size: small;
+}
+
+/*---------------------------Home Sections------------------------------*/
+.home-sections {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 90%;
+}
+
+.current-events,
+.weather {
+    background-color: var(--backgroundColor1);
+}
+
+/*------------------Weather-------------------------------*/
+#forecast {
+    padding: 0 0 20px 0;
+    margin: 20px auto;
+}
+
+/*----------------------------------Cards SPOTLIGHTS-------------------------------------*/
+.spotlights {
+    color: var(--color1);
+}
+
+.spotlights h2 {
+    margin-bottom: 0px;
+}
+
+#spotlights-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+.spotlight-card {
+    background-color: var(--color1);
+    color: var(--whitecolor);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 16px;
+}
+
+.spotlight-card a {
+    text-decoration: none;
+    background-color: var(--whitecolor);
+    padding: 6px;
+    border-radius: 6px;
+}
+
+.spotlight-card p {
+    margin-bottom: 12px;
+}
+
+.spotlight-card img {
+    width: 90%;
+}
+
+.spotlight-card h3 {
+    margin-top: 10px;
 }
