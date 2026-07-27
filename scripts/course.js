@@ -96,7 +96,8 @@ function displayCourses(filteredCourses) {
     filteredCourses.forEach(course => {
 
         let card = document.createElement('section');
-        let name = document.createElement('h3');
+        let name = document.createElement('a');
+        name.setAttribute('href', '#');
 
         if (course.completed == true) {
             name.textContent = `${course.subject} ${course.number} ✓`;
@@ -107,6 +108,10 @@ function displayCourses(filteredCourses) {
 
         card.appendChild(name);
         coursesDisplay.appendChild(card);
+
+        name.addEventListener('click', () => {
+        displayCourseDetails(course);
+});
     });
     const totalCredits = filteredCourses.reduce((sum, course) => sum + course.credits, 0);
     totalCreditsSpan.textContent = totalCredits;
@@ -132,3 +137,21 @@ btnWdd.addEventListener('click', (e) => {
 });
 
 displayCourses(courses);
+
+function displayCourseDetails(course) {
+  courseDetails.innerHTML = '';
+  courseDetails.innerHTML = `
+    <button id="closeModal">❌</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits</strong>: ${course.credits}</p>
+    <p><strong>Certificate</strong>: ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+  `;
+  courseDetails.showModal();
+  
+  closeModal.addEventListener("click", () => {
+    courseDetails.close();
+  });
+}
