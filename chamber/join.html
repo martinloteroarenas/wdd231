@@ -20,10 +20,9 @@
     <meta property="og:url" content="https://www.facebook.com" />
 
     <!--scripts-->
-    <script src="../chamber/scripts/directory.js" defer></script>
     <script src="../chamber/scripts/date.js" defer></script>
     <script src="../chamber/scripts/directory-navigation.js" defer></script>
-
+    <script src="../chamber/scripts/join.js" defer></script>
     <!--styles-->
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="../chamber/styles/directory-small.css">
@@ -66,6 +65,71 @@
         <div>
             <section class="form-section">
                 <h2>Join our network of entrepreneurs</h2>
+                <form method="get" action="../chamber/thankyou.html" id="join-form">
+                    <fieldset>
+                        <legend>Application Form</legend>
+
+                        <label for="fname">First Name*
+                            <input type="text" id="fname" name="fname" required autocomplete="given-name"
+                                title="Enter your first name">
+                        </label>
+                        <label for="lname">Last Name*
+                            <input type="text" id="lname" name="lname" required autocomplete="family-name"
+                                title="Enter your last name">
+                        </label>
+                        <label for="title">Organizational Title
+                            <input type="text" id="title" name="title" autocomplete="organization-title"
+                                pattern="[A-Za-z\s\-]{7,}"
+                                title="Alpha characters, spaces, and hyphens only, at least 7 characters">
+                        </label>
+                        <label for="email">Email Address*
+                            <input type="email" id="email" name="email" required autocomplete="email"
+                                placeholder="example@domain.com" title="Enter a valid email address">
+                        </label>
+                        <label for="phone">Mobile Phone Number*
+                            <input type="tel" id="phone" name="phone" required autocomplete="tel"
+                                title="Enter your mobile phone number">
+                        </label>
+                        <!--BUSSINESS INFORMATION-->
+                        <label for="organization">Business/Organization's Name*
+                            <input type="text" id="organization" name="organization" required
+                                autocomplete="organization" title="Please enter your business or organization name">
+                        </label>
+
+                        <div class="membership-selection">
+                            <span class="select-label">Membership Level*</span>
+
+                            <label class="radio-label">
+                                <input type="radio" name="membershipLevel" value="NP Membership" required>
+                                <span>NP (Non-Profit) Membership</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="membershipLevel" value="Bronze Membership">
+                                <span>Bronze Membership</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="membershipLevel" value="Silver Membership">
+                                <span>Silver Membership</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="membershipLevel" value="Gold Membership">
+                                <span>Gold Membership</span>
+                            </label>
+                        </div>
+
+                        <label for="description">
+                            Business/Organization Description
+                            <textarea id="description" name="description" rows="5"
+                                title="Describe your business or organization"></textarea>
+                        </label>
+
+                        <input type="hidden" id="timestamp" name="timestamp">
+                        
+                    </fieldset>
+                    <input type="submit" value="Complete Application" class="submit-btn">
+
+                    
+                </form>
             </section>
         </div>
     </main>
