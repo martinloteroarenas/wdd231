@@ -294,3 +294,25 @@ footer span {
 .spotlight-card h3 {
     margin-top: 10px;
 }
+/*-------------------Join page------------------------*/
+#join-form{
+    max-width: 90%;
+    margin: 0 auto;
+    background-color: var(--backgroundColor1);
+    padding: 8px;
+    border-radius: 10px;
+}
+fieldset{
+    border: none;
+}
+fieldset label {
+    display: block;
+    margin-bottom: 1rem;   
+}
+legend{
+    font-weight: 600;
+    margin: 10px auto;
+}
+.radio-label{
+    margin-top: 10px;
+}
