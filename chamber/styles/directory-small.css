@@ -97,6 +97,10 @@ h1 {
     padding-left: 10px;
 }
 
+.navigation li a {
+    padding: 4px;
+}
+
 /*----------------------------------main----------------------------------*/
 .toggle {
     display: block;
