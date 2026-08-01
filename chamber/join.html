@@ -124,14 +124,100 @@
                         </label>
 
                         <input type="hidden" id="timestamp" name="timestamp">
-                        
                     </fieldset>
                     <input type="submit" value="Complete Application" class="submit-btn">
-
-                    
                 </form>
             </section>
+            <section class="cards-section">
+                <h2>Membership Levels</h2>
+                <div class="np-card">
+                    <h3>NP Membership</h3>
+                    <p class="price">FREE</p>
+                    <button class="benefit-btn" data-modal="modal-np">Show Benefits</button>
+                </div>
+                <div class="bronze-card">
+                    <h3>Bronze Membership</h3>
+                    <p class="price">$20 per month</p>
+                    <button class="benefit-btn" data-modal="modal-bronze">Show Benefits</button>
+                </div>
+                <div class="silver-card">
+                    <h3>Silver Membership</h3>
+                    <p class="price">$40 per month</p>
+                    <button class="benefit-btn" data-modal="modal-silver">Show Benefits</button>
+                </div>
+                <div class="gold-card">
+                    <h3>Gold Membership</h3>
+                    <p class="price">$70 per month</p>
+                    <button class="benefit-btn" data-modal="modal-gold">Show Benefits</button>
+                </div>
+            </section>
         </div>
+        <dialog id="modal-np">
+            <div class="modal-header">
+                <h3>NP Membership</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p><strong>Benefits include:</strong></p>
+                <ul>
+                    <li>Access to community events</li>
+                    <li>Basic organization directory listing</li>
+                    <li>Newsletter subscription</li>
+                </ul>
+                <p class="cost"><strong>COST:</strong> FREE</p>
+            </div>
+        </dialog>
+
+        <dialog id="modal-bronze">
+            <div class="modal-header">
+                <h3>Bronze Membership</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p><strong>Benefits include:</strong></p>
+                <ul>
+                    <li>All Non-Profit benefits</li>
+                    <li>10% discount on event tickets</li>
+                    <li>Training workshop invitations</li>
+                </ul>
+                <p class="cost"><strong>COST:</strong> $20 per month</p>
+            </div>
+        </dialog>
+
+        <dialog id="modal-silver">
+            <div class="modal-header">
+                <h3>Silver Membership</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p><strong>Benefits include:</strong></p>
+                <ul>
+                    <li>All Bronze benefits</li>
+                    <li>Featured placement in business directory</li>
+                    <li>20% discount on event tickets</li>
+                    <li>Social media spot publication</li>
+                </ul>
+                <p class="cost"><strong>COST:</strong> $40 per month</p>
+            </div>
+        </dialog>
+
+        <dialog id="modal-gold">
+            <div class="modal-header">
+                <h3>Gold Membership</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p><strong>Benefits include:</strong></p>
+                <ul>
+                    <li>All Silver benefits</li>
+                    <li>Home Page Spotlight Position</li>
+                    <li>Free entrance to all special network events</li>
+                    <li>Free promotional booth at annual fair</li>
+                    <li>Mayor's recognition plaque</li>
+                </ul>
+                <p class="cost"><strong>COST:</strong> $70 per month</p>
+            </div>
+        </dialog>
     </main>
     <footer>
         <section>
