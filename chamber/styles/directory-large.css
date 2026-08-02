@@ -136,4 +136,8 @@
     .cards-section{
         max-width: 600px;
     }
+    /*---------------------thankyou------------------------*/
+    .summary-box{
+        max-width: 600px;
+    }
 }

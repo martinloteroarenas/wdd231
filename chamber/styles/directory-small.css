@@ -458,3 +458,26 @@ dialog ul{
     opacity: 0;
     animation: fadeInUp 0.8s ease-out forwards; 
 }
+/*--------------thankyou-------------*/
+.application{
+    text-align: center;
+}
+.summary-box{
+    text-align: center;
+    background-color: var(--backgroundColor1);
+    width: 70%;
+    margin: 14px auto;
+    border-radius: 10px;
+    padding: 10px;
+}
+.summary-box h2{
+    color: var(--color1);
+    margin-top: 4px;
+}
+.info-card p {
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+.gratitude{
+    margin: 0 10px;
+}
