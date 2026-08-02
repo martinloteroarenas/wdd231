@@ -481,3 +481,15 @@ dialog ul{
 .gratitude{
     margin: 0 10px;
 }
+.action-row{
+    text-align: center;
+    margin: 28px 0;
+}
+.btn-primary, .btn-secondary{
+    text-decoration: none;
+    background-color: var(--color1);
+    color: var(--whitecolor);
+    padding: 8px 12px;
+    margin: 20px 6px;
+    border-radius: 8px;
+}

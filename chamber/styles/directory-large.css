@@ -140,4 +140,8 @@
     .summary-box{
         max-width: 600px;
     }
+    .gratitude{
+        margin: 0 auto;
+        max-width: 600px;
+    }
 }
