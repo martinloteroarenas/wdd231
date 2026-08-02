@@ -294,40 +294,49 @@ footer span {
 .spotlight-card h3 {
     margin-top: 10px;
 }
+
 /*-------------------Join page------------------------*/
-.call-to-act{
+.call-to-act {
     color: var(--color1);
     padding-left: 10px;
 }
-#join-form{
+
+#join-form {
     max-width: 90%;
     margin: 0 auto;
     background-color: var(--backgroundColor1);
     padding: 8px;
     border-radius: 10px;
 }
-fieldset{
+
+fieldset {
     border: none;
 }
+
 fieldset label {
     display: block;
-    margin-bottom: 1rem;   
+    margin-bottom: 1rem;
 }
-legend{
+
+legend {
     font-weight: 600;
     margin: 10px auto;
 }
-.radio-label{
+
+.radio-label {
     margin-top: 10px;
 }
+
 fieldset label textarea {
     display: block;
-    width: 80%;       
+    width: 80%;
     margin-top: 8px;
 }
+
 .submit-btn {
     display: block;
     margin: 0 auto;
+    margin-bottom: 18px;
     width: 80%;
     max-width: 300px;
     border: none;
@@ -336,11 +345,13 @@ fieldset label textarea {
     padding: 6px;
     border-radius: 6px;
 }
-.join-sections-container{
+
+.join-sections-container {
     margin-bottom: 18px;
 }
+
 /*------------------------cards section-----------------------*/
-.cards-section{
+.cards-section {
     background-color: var(--backgroundColor1);
     display: flex;
     flex-direction: column;
@@ -350,10 +361,12 @@ fieldset label textarea {
     max-width: 90%;
     margin: 0 auto;
 }
-.cards-section h3{
+
+.cards-section h3 {
     text-align: center;
 }
-.cards-section div{
+
+.cards-section div {
     margin: 0 auto;
     background-color: var(--color1);
     width: 50%;
@@ -361,7 +374,8 @@ fieldset label textarea {
     padding: 8px;
     border-radius: 10px;
 }
-.benefit-btn{
+
+.benefit-btn {
     display: block;
     margin: 20px auto;
     width: 80%;
@@ -370,9 +384,12 @@ fieldset label textarea {
     padding: 6px;
     border-radius: 6px;
 }
-.cards-section div h3{
+
+.cards-section div h3 {
     margin: 10px;
 }
-.cards-section div h3, .cards-section div p{
+
+.cards-section div h3,
+.cards-section div p {
     color: var(--whitecolor);
 }
