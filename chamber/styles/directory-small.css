@@ -373,6 +373,9 @@ fieldset label textarea {
     max-width: 400px;
     padding: 8px;
     border-radius: 10px;
+    /*animation*/
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out forwards;
 }
 
 .benefit-btn {
@@ -452,11 +455,6 @@ dialog ul{
         opacity: 1;
         transform: translateY(0);
     }
-}
-
-.cards-section div {
-    opacity: 0;
-    animation: fadeInUp 0.8s ease-out forwards; 
 }
 /*--------------thankyou-------------*/
 .application{
