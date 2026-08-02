@@ -383,6 +383,7 @@ fieldset label textarea {
     border: none;
     padding: 6px;
     border-radius: 6px;
+    color: var(--blackcolor);
 }
 
 .cards-section div h3 {
