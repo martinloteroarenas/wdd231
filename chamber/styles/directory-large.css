@@ -128,5 +128,12 @@
     .join-sections-container{
         display: grid;
         grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        margin:0 10px;
+        margin-bottom: 20px;
+    }
+    /*--------------------join cards-------------------------*/
+    .cards-section{
+        max-width: 600px;
     }
 }
