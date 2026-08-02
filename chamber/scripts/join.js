@@ -32,3 +32,8 @@ document.querySelectorAll('dialog').forEach(modal => {
         }
     });
 });
+window.addEventListener('pageshow', (event) => {
+    if (event.persisted) {
+        window.location.reload();
+    }
+});
