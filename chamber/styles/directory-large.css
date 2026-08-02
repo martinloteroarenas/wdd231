@@ -113,4 +113,20 @@
         grid-template-columns: 1fr 1fr 1fr;
         max-width: 90%;
     }
+    /*-------------------Join page------------------------*/
+    fieldset label textarea {
+    display: block;
+    width: 80%;       
+    margin-top: 8px;
+    }
+    #join-form{
+        max-width: 600px;
+    }
+    .call-to-act{
+        text-align: center;
+    }
+    .join-sections-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
