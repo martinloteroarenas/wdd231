@@ -1,0 +1,51 @@
+:root{
+    --fontfamily1: "Michroma", Helvetica, sans-serif;
+    --fontfamily2: "Source Code Pro", monospace;;
+    --color1: #30e783;
+    --color2:#eab6ff;
+    --whitecolor:#fff;
+    --backgroundcolor:#252525;
+    --backgroundcolor2:#000;
+    --wayfinding:#380033;
+}
+.h1plan, .h2plan{
+    text-align: center;
+    color: var(--color1);
+    font-family: var(--fontfamily1);
+}
+.bodyplan{
+    background-color: var(--backgroundcolor);
+}
+.info-plan{
+    background-color: var(--backgroundcolor2);
+    max-width: 70%;
+    margin: 0 auto;
+}
+.pplan{
+    font-family: var(--fontfamily2);
+    color: var(--color2);
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.pcolor1{
+    font-family: var(--fontfamily2);
+    color: var(--color1);
+    text-align: center;
+}
+.typo1{
+    color: var(--color2);
+    font-family: var(--fontfamily1);
+    text-align: center;
+}
+.wireframes{
+    display: grid;
+    grid-template-rows: 0.5fr 1fr;
+    gap: 8px;
+    max-width: 100%;
+}
+.wireframes img{
+    margin: 0 auto;
+    width: auto;
+    height: auto;
+}
