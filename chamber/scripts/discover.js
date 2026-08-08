@@ -55,7 +55,7 @@ function displayItems(items) {
 
         const button = document.createElement("a");
         button.href = item.url;
-        button.textContent = "Learn More";
+        button.textContent = "Show More Details";
         button.target = "_blank";
         button.rel = "noopener noreferrer";
 
