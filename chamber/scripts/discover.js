@@ -35,22 +35,23 @@ function displayItems(items) {
 
     items.forEach((item, index) => {
         const card = document.createElement("section");
-
         card.classList.add("card", `card${index + 1}`);
 
         const heading = document.createElement("h2");
         heading.textContent = item.title;
 
+        const figure = document.createElement("figure");
         const image = document.createElement("img");
         image.src = item.photo;
         image.alt = item.title;
         image.loading = "lazy";
-
-        const description = document.createElement("p");
-        description.textContent = item.description;
+        figure.appendChild(image);
 
         const address = document.createElement("address");
         address.textContent = item.address;
+
+        const description = document.createElement("p");
+        description.textContent = item.description;
 
         const button = document.createElement("a");
         button.href = item.url;
@@ -59,9 +60,9 @@ function displayItems(items) {
         button.rel = "noopener noreferrer";
 
         card.appendChild(heading);
-        card.appendChild(image);
-        card.appendChild(description);
+        card.appendChild(figure);
         card.appendChild(address);
+        card.appendChild(description);
         card.appendChild(button);
 
         cardsContainer.appendChild(card);
