@@ -48,7 +48,7 @@ function displayItems(items) {
         figure.appendChild(image);
 
         const address = document.createElement("address");
-        address.textContent = item.address;
+        address.textContent = `Address: ${item.address}`;
 
         const description = document.createElement("p");
         description.textContent = item.description;
@@ -61,8 +61,8 @@ function displayItems(items) {
 
         card.appendChild(heading);
         card.appendChild(figure);
-        card.appendChild(address);
         card.appendChild(description);
+        card.appendChild(address);
         card.appendChild(button);
 
         cardsContainer.appendChild(card);
