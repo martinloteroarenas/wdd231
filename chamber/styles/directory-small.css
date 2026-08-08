@@ -503,3 +503,30 @@ dialog ul{
 .discover-pereira{
     text-align: center;
 }
+#discover-cards h2, address, #discover-cards p{
+    text-align: center;
+    color: var(--whitecolor);
+}
+#discover-cards .card{
+    display: block;
+    margin: 10px auto;
+    max-width: 400px;
+    background-color: var(--color1);
+    padding: 6px;
+    border-radius: 10px;
+}
+#discover-cards a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--blackcolor);
+    background-color: var(--backgroundColor1);
+    padding: 6px;
+    max-width: 200px;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+address, #discover-cards p{
+    margin: 10px auto;
+    padding: 0 10px;
+}

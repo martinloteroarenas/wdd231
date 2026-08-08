@@ -30,12 +30,13 @@ const cardsContainer = document.getElementById("discover-cards");
 
 function displayItems(items) {
     if (!cardsContainer) return;
-    
+
     cardsContainer.innerHTML = "";
 
-    items.forEach((item) => {
+    items.forEach((item, index) => {
         const card = document.createElement("section");
-        card.classList.add("card");
+
+        card.classList.add("card", `card${index + 1}`);
 
         const heading = document.createElement("h2");
         heading.textContent = item.title;
@@ -66,5 +67,4 @@ function displayItems(items) {
         cardsContainer.appendChild(card);
     });
 }
-
 displayItems(discoverData.items);
