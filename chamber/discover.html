@@ -20,10 +20,9 @@
     <meta property="og:url" content="https://www.facebook.com" />
 
     <!--scripts-->
-    <script src="../chamber/scripts/directory.js" defer></script>
     <script src="../chamber/scripts/date.js" defer></script>
     <script src="../chamber/scripts/directory-navigation.js" defer></script>
-
+    <script type="module" src="../chamber/scripts/discover.js"></script>
     <!--styles-->
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="../chamber/styles/directory-small.css">
@@ -62,7 +61,11 @@
 
     </header>
     <main>
-        <h1>Discover</h1>
+        <div>
+            <h1 class="discover-pereira">Discover Pereira</h1>
+            <h2 id="visitor-message" class="visitor-message"></h2>
+        </div>
+        <div id="discover-cards" class="cards-grid"></div>
     </main>
     <footer>
         <section>

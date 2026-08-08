@@ -1,0 +1,70 @@
+/*-------------------------TARJETAS---------------------------*/
+import discoverData from '../data/items.mjs';
+
+/*---------------------message---------------------*/
+const messageElement = document.getElementById("visitor-message");
+const currentVisit = Date.now();
+const lastVisit = localStorage.getItem("lastVisitDate");
+const msPerDay = 86400000;
+
+if (!lastVisit) {
+    messageElement.textContent = "Welcome! Let us know if you have any questions.";
+
+} else {
+    const timeDifference = currentVisit - Number(lastVisit);
+    const daysDifference = Math.floor(timeDifference / msPerDay);
+
+    if (timeDifference < msPerDay) {
+        messageElement.textContent = "Back so soon! Awesome!";
+
+    } else {
+        const dayWord = daysDifference === 1 ? "day" : "days";
+        messageElement.textContent = `You last visited ${daysDifference} ${dayWord} ago.`;
+    }
+}
+
+localStorage.setItem("lastVisitDate", currentVisit);
+
+/*-------------------------TARJETAS---------------------------*/
+const cardsContainer = document.getElementById("discover-cards");
+
+function displayItems(items) {
+    if (!cardsContainer) return;
+    
+    cardsContainer.innerHTML = "";
+
+    items.forEach((item) => {
+        const card = document.createElement("section");
+        card.classList.add("card");
+
+        const heading = document.createElement("h2");
+        heading.textContent = item.title;
+
+        const image = document.createElement("img");
+        image.src = item.photo;
+        image.alt = item.title;
+        image.loading = "lazy";
+
+        const description = document.createElement("p");
+        description.textContent = item.description;
+
+        const address = document.createElement("address");
+        address.textContent = item.address;
+
+        const button = document.createElement("a");
+        button.href = item.url;
+        button.textContent = "Learn More";
+        button.target = "_blank";
+        button.rel = "noopener noreferrer";
+
+        card.appendChild(heading);
+        card.appendChild(image);
+        card.appendChild(description);
+        card.appendChild(address);
+        card.appendChild(button);
+
+        cardsContainer.appendChild(card);
+    });
+}
+
+displayItems(discoverData.items);
