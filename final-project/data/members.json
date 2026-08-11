@@ -1,51 +1,51 @@
 {
     "members": [
         {
-            "name": "chucky barber shop",
-            "number": "3673567298",
-            "url": "https://chuckybarbershop.com",
+            "name": "nn",
+            "number": "3",
+            "url": ".com",
             "image": "../chamber/images/barber-shop.webp",
             "membershipLevel": 2
         },
         {
-            "name": "jhonny icecream",
-            "number": "3673544798",
-            "url": "https://jhonnyIcecream.com",
+            "name": "nn",
+            "number": "3",
+            "url": ".com",
             "image": "../chamber/images/icecream.webp",
             "membershipLevel": 1
         },
         {
-            "name": "pet shop",
-            "number": "3759046712",
-            "url": "https://petshop.com",
-            "image": "../chamber/images/pet-shop.webp",
+            "name": "Psymon Hemp",
+            "number": "3117532052",
+            "url": "https://www.instagram.com/psymonhemp?igsh=MXF0bWY1cXEwYm5yNg==",
+            "image": "../final-project/images/psymonhemp.webp",
             "membershipLevel": 3
         },
         {
-            "name": "gamer cave",
-            "number": "3245878712",
-            "url": "https://gamerCave.com",
+            "name": "nn",
+            "number": "3",
+            "url": ".com",
             "image": "../chamber/images/gamer-cave.webp",
             "membershipLevel": 3
         },
         {
-            "name": "just crepes",
-            "number": "3256879002",
-            "url": "https://justCrepes.com",
+            "name": "nn",
+            "number": "3",
+            "url": ".com",
             "image": "../chamber/images/crepes.webp",
             "membershipLevel": 2
         },
         {
-            "name": "down clothes",
-            "number": "3465541772",
-            "url": "https://downClothes.com",
+            "name": "nn",
+            "number": "3",
+            "url": ".com",
             "image": "../chamber/images/clothes.webp",
             "membershipLevel": 2
         },
         {
-            "name": "juan skateshop",
-            "number": "3290996721",
-            "url": "https://juanSkateshop.com",
+            "name": "nn",
+            "number": "3",
+            "url": ".com",
             "image": "../chamber/images/skateshop.webp",
             "membershipLevel": 1
         }

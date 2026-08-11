@@ -104,7 +104,7 @@ function displaySpotlights(members) {
     link.setAttribute('href', member.url);
     link.setAttribute('target', '_blank');
     link.setAttribute('rel', 'noopener noreferrer');
-    link.textContent = 'Visit Website';
+    link.textContent = 'Social Media';
 
     card.appendChild(img);
     card.appendChild(h3);
