@@ -1,0 +1,180 @@
+@media only screen and (min-width: 40rem) {
+
+    /*------------------------------header----------------------------------*/
+    header div nav ul li a {
+        padding: 0 10px;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 24px auto 0.6fr;
+        padding: 10px 0 16px 10px;
+        align-items: end;
+        column-gap: 8px;
+        background-color: var(--backgroundColor2);
+    }
+
+    nav ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin: 0;
+        column-gap: 20px;
+    }
+
+    header img {
+        display: block;
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+
+    header span {
+        font-size: 1.2rem;
+        color: var(--color2);
+    }
+
+    nav ul li {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+    }
+
+    li a {
+        text-decoration: none;
+        color: var(--color3);
+        display: block;
+        width: 100%;
+    }
+
+    /*------------------footer--------------------------*/
+    footer {
+        background-color: var(--backgroundColor2);
+        text-align: center;
+        padding: 2px 0;
+        display: block;
+        max-width: 100%;
+    }
+
+    footer section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .logos-container {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .logos-container img {
+        width: 100%;
+        max-width: 70px;
+        height: auto;
+        aspect-ratio: 1 / 1;
+        margin: 20px 0;
+    }
+
+    footer h3,
+    footer p,
+    footer span {
+        width: 100%;
+        box-sizing: border-box;
+        word-wrap: break-word
+    }
+
+    footer section div {
+        padding: 20px;
+    }
+
+    /*------------------------navigation and ham-----------------------*/
+    .hamburger {
+        display: none !important;
+    }
+
+    #hide-menu {
+        display: block !important;
+    }
+
+    .current {
+        background-color: var(--blackcolor);
+    }
+
+    header>div {
+        grid-column: auto;
+        width: auto;
+    }
+
+    nav ul li a {
+        border: none;
+    }
+
+    /*----------------------------HOME PAGE-------------------------------*/
+    #spotlights-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 90%;
+    }
+    /*-------------------Join page------------------------*/
+    fieldset label textarea {
+    display: block;
+    width: 80%;       
+    margin-top: 8px;
+    }
+    #join-form{
+        max-width: 600px;
+    }
+    .call-to-act{
+        text-align: center;
+    }
+    .join-sections-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        margin:0 10px;
+        margin-bottom: 20px;
+    }
+    /*--------------------join cards-------------------------*/
+    .cards-section{
+        max-width: 600px;
+    }
+    /*---------------------thankyou------------------------*/
+    .summary-box{
+        max-width: 600px;
+    }
+    .gratitude{
+        margin: 0 auto;
+        max-width: 600px;
+    }
+    /*----------------------------Discover Page 1024px---------------------------*/
+
+    #discover-cards{
+        gap: 1rem;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+            "card1 card1"
+            "card2 card3"
+            "card4 card4"
+            "card5 card6"
+            "card7 card8";
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+    }
+    #discover-cards .card:hover {
+        transform: translateY(-6px);
+    }
+
+    #discover-cards .card:hover img {
+        transform: scale(1.08);
+    }
+}
+/*----------------------------Discover Page 1024px---------------------------*/
+@media only screen and (min-width: 1025px) {
+    #discover-cards {
+        gap: 1rem;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            "card1 card1 card2 card3"
+            "card4 card5 card5 card6"
+            "card7 card7 card8 card8";
+    }
+}

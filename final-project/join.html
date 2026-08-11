@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="A website where entrepreneurs interact eachother in a Network of Pereira">
+    <meta name="author" content="Martin Lotero Arenas">
+    <title>Pereira Chamber of Commerce - Join</title>
+
+    <link rel="icon" href="../chamber/network.ico">
+
+    <!--social media meta properties-->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Pereira Chamber Of Commerce" />
+    <meta property="og:description"
+        content="A website where entrepreneurs interact eachother in a Network of Pereira" />
+    <meta property="og:image" content="https://martinloteroarenas.github.io/wdd231/chamber/directory.html" />
+    <meta property="og:url" content="https://www.facebook.com" />
+
+    <!--scripts-->
+    <script src="../chamber/scripts/date.js" defer></script>
+    <script src="../chamber/scripts/directory-navigation.js" defer></script>
+    <script src="../chamber/scripts/join.js" defer></script>
+    <!--styles-->
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../chamber/styles/directory-small.css">
+    <link rel="stylesheet" href="../chamber/styles/directory-large.css">
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="../chamber/images/network.svg" alt="network logo">
+        <span>Pereira Chamber Of Commerce</span>
+        <button id="ham-btn" class="hamburger" aria-label="open navigation menu"></button>
+        <div>
+            <nav id="hide-menu">
+                <a id="menu" href="#" aria-label="open navigation menu"></a>
+                <ul class="navigation">
+                    <li>
+                        <a href="../chamber/index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="../chamber/directory.html">Directory</a>
+                    </li>
+                    <li class="current">
+                        <a href="#">Join</a>
+                    </li>
+                    <li>
+                        <a href="../chamber/discover.html">Discover</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <main>
+        <h1>Membership Application</h1>
+        <div class="join-sections-container">
+            <section class="form-section">
+                <h2 class="call-to-act">Join our network of entrepreneurs</h2>
+                <form method="get" action="thankyou.html" id="join-form">
+                    <fieldset>
+                        <legend>Application Form</legend>
+
+                        <label for="fname">First Name*
+                            <input type="text" id="fname" name="fname" required autocomplete="given-name"
+                                title="Enter your first name">
+                        </label>
+                        <label for="lname">Last Name*
+                            <input type="text" id="lname" name="lname" required autocomplete="family-name"
+                                title="Enter your last name">
+                        </label>
+                        <label for="title">Organizational Title
+                            <input type="text" id="title" name="title" autocomplete="organization-title"
+                                pattern="[A-Za-z\s\-]{7,}"
+                                title="Alpha characters, spaces, and hyphens only, at least 7 characters">
+                        </label>
+                        <label for="email">Email Address*
+                            <input type="email" id="email" name="email" required autocomplete="email"
+                                placeholder="example@domain.com" title="Enter a valid email address">
+                        </label>
+                        <label for="phone">Mobile Phone Number*
+                            <input type="tel" id="phone" name="phone" required autocomplete="tel"
+                                title="Enter your mobile phone number">
+                        </label>
+                        <!--BUSSINESS INFORMATION-->
+                        <label for="organization">Business/Organization's Name*
+                            <input type="text" id="organization" name="organization" required
+                                autocomplete="organization" title="Please enter your business or organization name">
+                        </label>
+
+                        <div class="membership-selection">
+                            <span class="select-label">Membership Level*</span>
+
+                            <label class="radio-label">
+                                <input type="radio" name="membershipLevel" value="NP Membership" required>
+                                <span>NP (Non-Profit) Membership</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="membershipLevel" value="Bronze Membership">
+                                <span>Bronze Membership</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="membershipLevel" value="Silver Membership">
+                                <span>Silver Membership</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="membershipLevel" value="Gold Membership">
+                                <span>Gold Membership</span>
+                            </label>
+                        </div>
+
+                        <label for="description">
+                            Business/Organization Description:
+                            <textarea id="description" name="description" rows="5"
+                                title="Describe your business or organization"></textarea>
+                        </label>
+
+                        <input type="hidden" id="timestamp" name="timestamp">
+                    </fieldset>
+                    <input type="submit" value="Complete Application" class="submit-btn">
+                </form>
+            </section>
+            <section>
+                <h2 class="call-to-act">Membership Levels</h2>
+                <div class="cards-section">
+                    <div class="np-card">
+                        <h3>NP Membership</h3>
+                        <p class="price">FREE</p>
+                        <button class="benefit-btn" data-modal="modal-np">Show Benefits</button>
+                    </div>
+                    <div class="bronze-card">
+                        <h3>Bronze Membership</h3>
+                        <p class="price">$20 per month</p>
+                        <button class="benefit-btn" data-modal="modal-bronze">Show Benefits</button>
+                    </div>
+                    <div class="silver-card">
+                        <h3>Silver Membership</h3>
+                        <p class="price">$40 per month</p>
+                        <button class="benefit-btn" data-modal="modal-silver">Show Benefits</button>
+                    </div>
+                    <div class="gold-card">
+                        <h3>Gold Membership</h3>
+                        <p class="price">$70 per month</p>
+                        <button class="benefit-btn" data-modal="modal-gold">Show Benefits</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <dialog id="modal-np">
+            <div class="modal-header">
+                <h3>NP Membership</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p><strong>Benefits include:</strong></p>
+                <ul>
+                    <li>Access to community events</li>
+                    <li>Basic organization directory listing</li>
+                    <li>Newsletter subscription</li>
+                </ul>
+                <p class="cost"><strong>COST:</strong> FREE</p>
+            </div>
+        </dialog>
+
+        <dialog id="modal-bronze">
+            <div class="modal-header">
+                <h3>Bronze Membership</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p><strong>Benefits include:</strong></p>
+                <ul>
+                    <li>All Non-Profit benefits</li>
+                    <li>10% discount on event tickets</li>
+                    <li>Training workshop invitations</li>
+                </ul>
+                <p class="cost"><strong>COST:</strong> $20 per month</p>
+            </div>
+        </dialog>
+
+        <dialog id="modal-silver">
+            <div class="modal-header">
+                <h3>Silver Membership</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p><strong>Benefits include:</strong></p>
+                <ul>
+                    <li>All Bronze benefits</li>
+                    <li>Featured placement in business directory</li>
+                    <li>20% discount on event tickets</li>
+                    <li>Social media spot publication</li>
+                </ul>
+                <p class="cost"><strong>COST:</strong> $40 per month</p>
+            </div>
+        </dialog>
+
+        <dialog id="modal-gold">
+            <div class="modal-header">
+                <h3>Gold Membership</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p><strong>Benefits include:</strong></p>
+                <ul>
+                    <li>All Silver benefits</li>
+                    <li>Home Page Spotlight Position</li>
+                    <li>Free entrance to all special network events</li>
+                    <li>Free promotional booth at annual fair</li>
+                    <li>Mayor's recognition plaque</li>
+                </ul>
+                <p class="cost"><strong>COST:</strong> $70 per month</p>
+            </div>
+        </dialog>
+    </main>
+    <footer>
+        <section>
+            <div>
+                <h2>Pereira Chamber Of Commerce</h2>
+                <p>colombia risaralda pereira, e-mail: pereiraCommerce@gmailcom</p>
+                <p>(+57)3244602376</p>
+            </div>
+            <div class="logos-container">
+                <img src="images/linkedin.svg" alt="linkdin" width="70">
+                <img src="images/github.svg" alt="github" width="70">
+                <img src="images/facebook.svg" alt="X" width="70">
+            </div>
+            <div>
+                <p>WDD231 Class Project</p>
+                <p>© <span id="year"></span> Martin Lotero Arenas Pereira Colombia</p>
+                <p>last modification:<span id="lastModified"></span></p>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>
