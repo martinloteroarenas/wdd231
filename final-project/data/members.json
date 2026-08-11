@@ -1,38 +1,38 @@
 {
     "members": [
         {
-            "name": "nn",
-            "number": "3",
-            "url": ".com",
-            "image": "../chamber/images/barber-shop.webp",
+            "name": "Lil Eyes",
+            "number": "+57 3207707199",
+            "url": "https://www.instagram.com/lileyesdj_?igsh=MXFjNmh2Y2w0eHkzOQ==",
+            "image": "../final-project/images/lileyes.webp",
             "membershipLevel": 2
         },
         {
-            "name": "nn",
-            "number": "3",
-            "url": ".com",
-            "image": "../chamber/images/icecream.webp",
-            "membershipLevel": 1
+            "name": "The Cosmic Thing",
+            "number": "+57 3117532052",
+            "url": "https://www.instagram.com/thecosmicthing?igsh=NG5hZXZwMG9iMDZ3",
+            "image": "../final-project/images/cosmic.webp",
+            "membershipLevel": 2
         },
         {
             "name": "Psymon Hemp",
-            "number": "3117532052",
+            "number": "+57 3117532052",
             "url": "https://www.instagram.com/psymonhemp?igsh=MXF0bWY1cXEwYm5yNg==",
             "image": "../final-project/images/psymonhemp.webp",
             "membershipLevel": 3
         },
         {
-            "name": "nn",
-            "number": "3",
-            "url": ".com",
-            "image": "../chamber/images/gamer-cave.webp",
+            "name": "FV07",
+            "number": "+57 3242478692",
+            "url": "https://www.instagram.com/mafe_vele?igsh=Zmp2YWQ0bXZwejhl",
+            "image": "../final-project/images/fv07.webp",
             "membershipLevel": 3
         },
         {
-            "name": "nn",
-            "number": "3",
-            "url": ".com",
-            "image": "../chamber/images/crepes.webp",
+            "name": "Wise Chord",
+            "number": "+57 3244156393",
+            "url": "https://www.instagram.com/wisechord_?igsh=YWs3cmo0Mnlqc2hi",
+            "image": "../final-project/images/wisechord.webp",
             "membershipLevel": 2
         },
         {
