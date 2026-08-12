@@ -151,12 +151,12 @@ main {
     max-width: 300px;
     height: auto;
     margin: 0 auto;
+    margin-top: 8px;
 }
 
 .card-container h2,
 p {
     text-align: center;
-    padding: 0;
     margin: 0;
 }
 
@@ -616,31 +616,24 @@ dialog ul li {
 .card2 {
     grid-area: card2;
 }
-
 .card3 {
     grid-area: card3;
 }
-
 .card4 {
     grid-area: card4;
 }
-
 .card5 {
     grid-area: card5;
 }
-
 .card6 {
     grid-area: card6;
 }
-
 .card7 {
     grid-area: card7;
 }
-
 .card8 {
     grid-area: card8;
 }
-
 #discover-cards {
     display: grid;
     gap: 1rem;
@@ -655,14 +648,12 @@ dialog ul li {
         "card7"
         "card8";
 }
-
 #discover-cards h2,
 address,
 #discover-cards p {
     text-align: center;
     color: var(--whitecolor);
 }
-
 #discover-cards .card {
     margin: 10px 10px;
     background-color: var(--color1);
@@ -670,7 +661,6 @@ address,
     border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 #discover-cards a {
     display: flex;
     justify-content: center;
@@ -682,19 +672,16 @@ address,
     margin: 10px auto;
     border-radius: 10px;
 }
-
 address,
 #discover-cards p {
     margin: 10px auto;
     padding: 0 10px;
 }
-
 #discover-cards figure {
     margin: 0;
     overflow: hidden;
     border-radius: 8px;
 }
-
 #discover-cards img {
     width: 100%;
     height: auto;
