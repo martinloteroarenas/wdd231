@@ -209,6 +209,13 @@ footer span {
     box-sizing: border-box;
     word-wrap: break-word
 }
+footer h2{
+    color: var(--color2);
+}
+footer p{
+    font-family: var(--fontfamily2);
+    color: var(--color3);
+}
 
 /*---------------------------------HOME PAGE-------------------------*/
 .hero-container {
@@ -261,7 +268,7 @@ footer span {
 
 .current-events,
 .weather {
-    background-color: var(--blackcolor);
+    background-color: var(--backgroundColor2);
 }
 .current-events h2, .weather h2{
     color: var(--color2);
@@ -276,8 +283,11 @@ footer span {
 #forecast {
     padding: 0 0 20px 0;
     margin: 20px auto;
+    color: var(--color3);
 }
-
+figcaption{
+    color: var(--color2);
+}
 /*----------------------------------Cards SPOTLIGHTS-------------------------------------*/
 .spotlights {
     color: var(--color2);
