@@ -325,7 +325,6 @@ label {
     margin: 0 auto;
     background-color: var(--backgroundColor2);
     padding: 8px;
-    border-radius: 10px;
 }
 fieldset {
     border: none;
@@ -368,7 +367,6 @@ fieldset label textarea {
     flex-direction: column;
     gap: 20px;
     padding: 30px 0;
-    border-radius: 10px;
     max-width: 90%;
     margin: 0 auto;
 }
@@ -381,7 +379,6 @@ fieldset label textarea {
     width: 50%;
     max-width: 400px;
     padding: 8px;
-    border-radius: 10px;
     /*animation*/
     opacity: 0;
     animation: fadeInUp 0.8s ease-out forwards;
@@ -407,7 +404,6 @@ fieldset label textarea {
 /*-------------------------dialog-------------------------*/
 dialog {
     border: 1px solid var(--color2);
-    border-radius: 12px;
     padding: 0;
     width: 90%;
     max-width: 420px;
@@ -441,7 +437,6 @@ dialog::backdrop {
     cursor: pointer;
     width: 32px;
     height: 32px;
-    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -481,7 +476,6 @@ dialog ul li {
     background-color: var(--backgroundColor2);
     width: 70%;
     margin: 14px auto;
-    border-radius: 10px;
     padding: 10px;
 }
 .summary-box h2 {
@@ -509,9 +503,9 @@ dialog ul li {
 .btn-primary,
 .btn-secondary {
     text-decoration: none;
-    background-color: var(--backgroundColor2);
-    color: var(--color2);
-    padding: 8px 12px;
+    background-color: var(--color2);
+    color: var(--blackcolor);
+    padding: 8px 12px 12px 12px;
     margin: 20px 6px;
     border-radius: 8px;
 }
