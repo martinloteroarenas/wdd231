@@ -194,6 +194,7 @@ p {
     margin-bottom: 4px;
     border-radius: 8px;
     color: var(--blackcolor);
+    padding-bottom: 3px;
 }
 /*---------------footer----------------------------*/
 footer {

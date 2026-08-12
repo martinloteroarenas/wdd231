@@ -36,17 +36,73 @@
             "membershipLevel": 2
         },
         {
-            "name": "nn",
-            "number": "3",
-            "url": ".com",
-            "image": "../chamber/images/clothes.webp",
+            "name": "Johan Acosta",
+            "number": "3356457623",
+            "url": "https://www.instagram.com/j.acosta______?igsh=MWN2aXVtMnc1NjFoYg==",
+            "image": "../final-project/images/jacosta.webp",
             "membershipLevel": 2
         },
         {
-            "name": "nn",
-            "number": "3", 
-            "url": ".com",
-            "image": "../chamber/images/skateshop.webp",
+            "name": "Zwick",
+            "number": "3456453476",
+            "url": "https://www.instagram.com/__zwick?igsh=cHhmb3ZpdHExZTRq",
+            "image": "../final-project/images/zwick.webp",
+            "membershipLevel": 2
+        },
+        {
+            "name": "Usma",
+            "number": "3192786468",
+            "url": "https://www.instagram.com/djkappa.btc?igsh=MTJubXdnbmVoNHQ1ag==",
+            "image": "../final-project/images/usma.webp",
+            "membershipLevel": 1
+        },
+        {
+            "name": "Astra",
+            "number": "3104299930",
+            "url": "https://www.instagram.com/astra.dj?igsh=MWx1NDAyNWpsaDJ4MQ=",
+            "image": "../final-project/images/astra.webp",
+            "membershipLevel": 1
+        },
+        {
+            "name": "Axid",
+            "number": "3375078695",
+            "url": "https://www.instagram.com/axid.dj?igsh=MXFncXJyNWszM3Y0NA==",
+            "image": "../final-project/images/axid.webp",
+            "membershipLevel": 2
+        },
+        {
+            "name": "Inout",
+            "number": "3850467356",
+            "url": "https://www.instagram.com/inout89.col?igsh=enBqcW9vMXQzdjlr",
+            "image": "../final-project/images/inout.webp",
+            "membershipLevel": 1
+        },
+        {
+            "name": "Orson Viafara",
+            "number": "3678504785",
+            "url": "https://www.instagram.com/orsonviafara?igsh=OHJpa2I2MWtzYjR3",
+            "image": "../final-project/images/orson.webp",
+            "membershipLevel": 1
+        },
+        {
+            "name": "Gino",
+            "number": "3784067859",
+            "url": "https://www.instagram.com/ginomoceton?igsh=bXJsdmVqenNxOGY2",
+            "image": "../final-project/images/gino.webp",
+            "membershipLevel": 3
+        },
+        {
+            "name": "Santiago Lopez",
+            "number": "3750467590",
+            "url": "https://www.instagram.com/cybergothzz?igsh=MnJ6bzk5aHFuYThy",
+            "image": "../final-project/images/santiago.webp",
+            "membershipLevel": 2
+        },
+        {
+            "name": "Benzza",
+            "number": "344688590",
+            "url": "https://www.instagram.com/benzza_col?igsh=MTNsZmhpeDQwMWVmMA==",
+            "image": "../final-project/images/benzza.webp",
             "membershipLevel": 1
         }
     ]
