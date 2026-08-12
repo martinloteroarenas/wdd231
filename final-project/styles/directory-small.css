@@ -4,7 +4,7 @@
     --color1: #490139;
     --backgroundColor1: #ffe7e7;
     --blackcolor: #000;
-    --bluecolor: #120075;
+    --bluecolor: #380033;
     --whitecolor: #ffffff;
     --color2: #30e783;
     --color3: #eab6ff;
@@ -28,7 +28,7 @@
 
 .hamburger::before {
     content: "\2630";
-    font-weight:lighter;
+    font-weight: lighter;
     font-size: xx-large;
 }
 
@@ -100,9 +100,10 @@ nav li :hover {
 }
 
 /*----------------------body-------------------------*/
-body{
+body {
     background-color: var(--backgroundColor2);
 }
+
 h1 {
     padding-left: 10px;
     padding-top: 10px;
@@ -115,9 +116,11 @@ h1 {
 }
 
 /*----------------------------------main----------------------------------*/
-main{
+main {
     background-color: var(--blackcolor);
+    padding-bottom: 20px;
 }
+
 .toggle {
     display: block;
     margin: 20px auto;
@@ -178,14 +181,17 @@ p {
     background-color: var(--blackcolor);
     border-bottom: none;
 }
+
 .toggle .current a {
     color: var(--color2);
 }
+
 #cards {
     max-width: 1000px;
     margin: 0 auto;
     min-height: 400px;
 }
+
 .instagram {
     display: flex;
     justify-content: center;
@@ -200,6 +206,7 @@ p {
     color: var(--blackcolor);
     padding-bottom: 3px;
 }
+
 /*---------------footer----------------------------*/
 footer {
     background-color: var(--backgroundColor2);
@@ -216,10 +223,12 @@ footer span {
     box-sizing: border-box;
     word-wrap: break-word
 }
-footer h2{
+
+footer h2 {
     color: var(--color2);
 }
-footer p{
+
+footer p {
     font-family: var(--fontfamily2);
     color: var(--color3);
 }
@@ -265,6 +274,7 @@ footer p{
     color: var(--color3);
     font-family: var(--fontfamily2);
 }
+
 .moreartists {
     display: block;
     margin: 0 auto;
@@ -277,6 +287,7 @@ footer p{
     padding: 8px 8px 10px 8px;
     text-decoration: none;
 }
+
 /*---------------------------Home Sections------------------------------*/
 .home-sections {
     margin: 0 auto;
@@ -288,13 +299,16 @@ footer p{
 .current-events {
     background-color: var(--backgroundColor2);
 }
-.current-events h2{
+
+.current-events h2 {
     color: var(--color2);
 }
-.current-events p{
+
+.current-events p {
     font-family: var(--fontfamily2);
     color: var(--color3);
 }
+
 /*----------------------------------Cards SPOTLIGHTS-------------------------------------*/
 .spotlights {
     color: var(--color2);
@@ -344,14 +358,29 @@ footer p{
 
 /*-------------------Join page------------------------*/
 .call-to-act {
-    color: var(--color1);
+    color: var(--color2);
     padding-left: 10px;
+}
+
+legend,
+.select-label {
+    color: var(--color2);
+}
+
+label {
+    font-family: var(--fontfamily2);
+    color: var(--color3);
+}
+
+.radio-label {
+    font-family: var(--fontfamily2);
+    color: var(--color3);
 }
 
 #join-form {
     max-width: 90%;
     margin: 0 auto;
-    background-color: var(--backgroundColor1);
+    background-color: var(--backgroundColor2);
     padding: 8px;
     border-radius: 10px;
 }
@@ -387,8 +416,8 @@ fieldset label textarea {
     width: 80%;
     max-width: 300px;
     border: none;
-    background-color: var(--color1);
-    color: var(--whitecolor);
+    background-color: var(--color2);
+    color: var(--blackcolor);
     padding: 6px;
     border-radius: 6px;
 }
@@ -399,7 +428,7 @@ fieldset label textarea {
 
 /*------------------------cards section-----------------------*/
 .cards-section {
-    background-color: var(--backgroundColor1);
+    background-color: var(--backgroundColor2);
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -415,7 +444,7 @@ fieldset label textarea {
 
 .cards-section div {
     margin: 0 auto;
-    background-color: var(--color1);
+    background-color: var(--color3);
     width: 50%;
     max-width: 400px;
     padding: 8px;
@@ -433,7 +462,7 @@ fieldset label textarea {
     border: none;
     padding: 6px;
     border-radius: 6px;
-    background-color: var(--whitecolor);
+    background-color: var(--color2);
     color: var(--blackcolor);
 }
 
@@ -443,35 +472,44 @@ fieldset label textarea {
 
 .cards-section div h3,
 .cards-section div p {
-    color: var(--whitecolor);
+    color: var(--blackcolor);
 }
+
 /*-------------------------dialog-------------------------*/
 dialog {
-    border: none;
+    border: 1px solid var(--color2);
     border-radius: 12px;
     padding: 0;
     width: 90%;
     max-width: 420px;
-    background-color: var(--whitecolor);
+    background-color: var(--backgroundColor2);
 }
+
 dialog::backdrop {
     background-color: var(--blackcolor);
 }
+
 .modal-header {
     position: relative;
     padding: 1.5rem 1.5rem 0.5rem 1.5rem;
     text-align: center;
 }
+
 .modal-header h3 {
     margin: 0;
     font-size: 1.4rem;
-    color: var(--color1);
+    color: var(--color2);
 }
+
+.modal-body p {
+    color: var(--color3);
+}
+
 .close-modal {
     position: absolute;
     top: 12px;
     right: 12px;
-    background-color: var(--backgroundColor1);
+    background-color: var(--color3);
     border: none;
     font-size: 2rem;
     font-weight: bold;
@@ -485,29 +523,41 @@ dialog::backdrop {
     justify-content: center;
     transition: background-color 0.2s, color 0.2s;
 }
-dialog ul{
+
+dialog ul {
     padding: 0;
     margin: 20px auto;
 }
-.modal-body .cost{
-    margin-bottom: 14px;
+
+dialog ul li {
+    font-family: var(--fontfamily2);
+    color: var(--color3);
 }
+
+.modal-body .cost {
+    margin-bottom: 14px;
+    color: var(--color2);
+}
+
 /*------------------------ANIMACION-------------------*/
 @keyframes fadeInUp {
     from {
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
+
 /*--------------thankyou-------------*/
-.application{
+.application {
     text-align: center;
 }
-.summary-box{
+
+.summary-box {
     text-align: center;
     background-color: var(--backgroundColor1);
     width: 70%;
@@ -515,22 +565,28 @@ dialog ul{
     border-radius: 10px;
     padding: 10px;
 }
-.summary-box h2{
+
+.summary-box h2 {
     color: var(--color1);
     margin-top: 4px;
 }
+
 .info-card p {
     overflow-wrap: break-word;
     word-break: break-word;
 }
-.gratitude{
+
+.gratitude {
     margin: 0 10px;
 }
-.action-row{
+
+.action-row {
     text-align: center;
     margin: 28px 0;
 }
-.btn-primary, .btn-secondary{
+
+.btn-primary,
+.btn-secondary {
     text-decoration: none;
     background-color: var(--color1);
     color: var(--whitecolor);
@@ -538,6 +594,7 @@ dialog ul{
     margin: 20px 6px;
     border-radius: 8px;
 }
+
 /*--------------------------DISCOVER PAGE-------------------------*/
 .visitor-message {
     background-color: var(--backgroundColor1);
@@ -547,20 +604,44 @@ dialog ul{
     font-weight: 500;
     text-align: center;
 }
-.discover-pereira{
+
+.discover-pereira {
     text-align: center;
 }
 
-.card1 { grid-area: card1; }
-.card2 { grid-area: card2; }
-.card3 { grid-area: card3; }
-.card4 { grid-area: card4; }
-.card5 { grid-area: card5; }
-.card6 { grid-area: card6; }
-.card7 { grid-area: card7; }
-.card8 { grid-area: card8; }
+.card1 {
+    grid-area: card1;
+}
 
-#discover-cards{
+.card2 {
+    grid-area: card2;
+}
+
+.card3 {
+    grid-area: card3;
+}
+
+.card4 {
+    grid-area: card4;
+}
+
+.card5 {
+    grid-area: card5;
+}
+
+.card6 {
+    grid-area: card6;
+}
+
+.card7 {
+    grid-area: card7;
+}
+
+.card8 {
+    grid-area: card8;
+}
+
+#discover-cards {
     display: grid;
     gap: 1rem;
     grid-template-columns: 1fr;
@@ -574,18 +655,23 @@ dialog ul{
         "card7"
         "card8";
 }
-#discover-cards h2, address, #discover-cards p{
+
+#discover-cards h2,
+address,
+#discover-cards p {
     text-align: center;
     color: var(--whitecolor);
 }
-#discover-cards .card{
+
+#discover-cards .card {
     margin: 10px 10px;
     background-color: var(--color1);
     padding: 6px;
     border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-#discover-cards a{
+
+#discover-cards a {
     display: flex;
     justify-content: center;
     text-decoration: none;
@@ -596,15 +682,19 @@ dialog ul{
     margin: 10px auto;
     border-radius: 10px;
 }
-address, #discover-cards p{
+
+address,
+#discover-cards p {
     margin: 10px auto;
     padding: 0 10px;
 }
+
 #discover-cards figure {
     margin: 0;
     overflow: hidden;
     border-radius: 8px;
 }
+
 #discover-cards img {
     width: 100%;
     height: auto;
