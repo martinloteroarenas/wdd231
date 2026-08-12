@@ -92,9 +92,9 @@ function displaySpotlights(members) {
     const levelP = document.createElement('p');
     levelP.classList.add('membership-level');
     if (member.membershipLevel === 3) {
-      levelP.textContent = 'Gold Member';
+      levelP.textContent = 'Tier S';
     } else if (member.membershipLevel === 2) {
-      levelP.textContent = 'Silver Member';
+      levelP.textContent = 'Tier A';
     }
 
     const phoneP = document.createElement('p');

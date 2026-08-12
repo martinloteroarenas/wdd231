@@ -57,20 +57,7 @@
 
     footer section {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    .logos-container {
-        display: flex;
-        justify-content: space-around;
-    }
-
-    .logos-container img {
-        width: 100%;
-        max-width: 70px;
-        height: auto;
-        aspect-ratio: 1 / 1;
-        margin: 20px 0;
+        grid-template-columns: 1fr 1fr;
     }
 
     footer h3,

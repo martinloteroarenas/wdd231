@@ -16,7 +16,7 @@
     box-sizing: border-box;
 }
 
-/*--------------------------Hamburger Navigation-----------------------------*/
+/*----------------Hamburger Navigation-----------------------------*/
 .hamburger {
     background: none;
     border: none;
@@ -125,22 +125,22 @@ main{
 }
 
 .toggle a {
-    background-color: var(--color1);
+    background-color: var(--color2);
     margin: 0 10px;
     padding: 10px 24px;
-    color: var(--whitecolor);
+    color: var(--color3);
     border-radius: 10px;
     text-decoration: none;
 }
 
 .card-container {
-    background-color: var(--backgroundColor1);
+    background-color: var(--backgroundColor2);
     max-width: 300px;
     margin: 10px auto;
-    border-radius: 16px;
+    padding: 6px;
 }
 
-img.member-img,
+.member-img,
 .card img {
     display: block;
     width: 100%;
@@ -157,11 +157,14 @@ p {
 }
 
 .card-container h2 {
+    color: var(--color2);
     padding: 6px;
 }
 
 .card-container p {
+    font-family: var(--fontfamily2);
     padding: 4px;
+    color: var(--color3);
 }
 
 .build-grid {
@@ -179,7 +182,19 @@ p {
     margin: 0 auto;
     min-height: 400px;
 }
-
+.instagram {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: var(--color2);
+    max-width: 200px;
+    margin: 0 auto;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border-radius: 8px;
+    color: var(--blackcolor);
+}
 /*---------------footer----------------------------*/
 footer {
     background-color: var(--backgroundColor2);
@@ -187,19 +202,6 @@ footer {
     padding: 2px 0;
     display: block;
     max-width: 100%;
-}
-
-.logos-container {
-    display: flex;
-    justify-content: space-around;
-}
-
-.logos-container img {
-    width: 100%;
-    max-width: 70px;
-    height: auto;
-    aspect-ratio: 1 / 1;
-    margin: 20px 0;
 }
 
 footer h3,

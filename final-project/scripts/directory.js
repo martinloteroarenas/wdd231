@@ -1,9 +1,9 @@
-const json = '../chamber/data/members.json';
+const json = '../final-project/data/members.json';
 
 const cards = document.querySelector('#cards');
 
 async function getMembersData(json) {
-    const response = await fetch(json)
+    const response = await fetch(json);
     const data = await response.json();
 
     displayMembers(data.members);
@@ -16,15 +16,30 @@ const displayMembers = (members) => {
         let businessName = document.createElement('h2');
         let portrait = document.createElement('img');
         let number = document.createElement('p');
-        let url = document.createElement('p');
-        let address = document.createElement('p');
+        let url = document.createElement('a'); 
         let membership = document.createElement('p');
 
         businessName.textContent = member.name;
         number.textContent = `Phone number: ${member.number}`;
-        url.textContent = `Website: ${member.url}`;
-        address.textContent = `Address: ${member.address}`;
-        membership.textContent = `Membership Level: ${member.membershipLevel}`;
+        
+        url.textContent = 'social media';
+        url.setAttribute('href', member.url);
+        url.classList.add('instagram');
+        url.setAttribute('target', '_blank');
+        url.setAttribute('rel', 'noopener noreferrer');
+
+        let tierLabel = '';
+        if (member.membershipLevel === 3) {
+            tierLabel = 'Tier S';
+        } else if (member.membershipLevel === 2) {
+            tierLabel = 'Tier A';
+        } else if (member.membershipLevel === 1) {
+            tierLabel = 'Tier B';
+        } else {
+            tierLabel = 'Unknown';
+        }
+
+        membership.textContent = `Qualification: ${tierLabel}`;
 
         portrait.setAttribute('src', member.image);
         if (index === 0) {
@@ -44,9 +59,9 @@ const displayMembers = (members) => {
         card.appendChild(businessName);
         card.appendChild(portrait);
         card.appendChild(number);
-        card.appendChild(url);
-        card.appendChild(address);
         card.appendChild(membership);
+        card.appendChild(url);
+
 
         cards.appendChild(card);
     });

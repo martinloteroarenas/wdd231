@@ -5,7 +5,7 @@
             "number": "+57 3207707199",
             "url": "https://www.instagram.com/lileyesdj_?igsh=MXFjNmh2Y2w0eHkzOQ==",
             "image": "../final-project/images/lileyes.webp",
-            "membershipLevel": 2
+            "membershipLevel": 3
         },
         {
             "name": "The Cosmic Thing",
@@ -44,7 +44,7 @@
         },
         {
             "name": "nn",
-            "number": "3",
+            "number": "3", 
             "url": ".com",
             "image": "../chamber/images/skateshop.webp",
             "membershipLevel": 1
