@@ -319,6 +319,7 @@ label {
 .radio-label {
     font-family: var(--fontfamily2);
     color: var(--color3);
+    margin-top: 10px;
 }
 #join-form {
     max-width: 90%;
@@ -336,9 +337,6 @@ fieldset label {
 legend {
     font-weight: 600;
     margin: 10px auto;
-}
-.radio-label {
-    margin-top: 10px;
 }
 fieldset label textarea {
     display: block;
