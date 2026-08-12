@@ -125,12 +125,13 @@ main{
 }
 
 .toggle a {
-    background-color: var(--color2);
+    background-color: var(--backgroundColor2);
     margin: 0 10px;
     padding: 10px 24px;
-    color: var(--color3);
+    color: var(--color2);
     border-radius: 10px;
     text-decoration: none;
+    border-bottom: 3px solid var(--color2);
 }
 
 .card-container {
@@ -175,8 +176,11 @@ p {
 
 .toggle .current {
     background-color: var(--blackcolor);
+    border-bottom: none;
 }
-
+.toggle .current a {
+    color: var(--color2);
+}
 #cards {
     max-width: 1000px;
     margin: 0 auto;
