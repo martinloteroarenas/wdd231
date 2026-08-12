@@ -17,7 +17,6 @@
 /*----------------Hamburger Navigation-----------------------------*/
 .hamburger {
     background: none;
-    border: none;
     color: var(--color2);
     cursor: pointer;
     background-color: var(--backgroundColor2);
