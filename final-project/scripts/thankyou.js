@@ -36,7 +36,7 @@ if (showElement) {
         </div>
 
         <div class="info-card">
-            <h3>Membership type selected:</h3>
+            <h3>Type of membership selected:</h3>
             <p>${getValue('membershipLevel')}</p>
         </div>
 
