@@ -511,8 +511,8 @@ dialog ul li {
 }
 /*--------------------------DISCOVER PAGE-------------------------*/
 .visitor-message {
-    background-color: var(--backgroundColor1);
-    color: var(--color1);
+    background-color: var(--blackcolor);
+    color: var(--color2);
     padding: 1rem;
     margin: 1rem 0;
     font-weight: 500;
@@ -560,16 +560,14 @@ dialog ul li {
         "card8";
 }
 #discover-cards h2,
-address,
-#discover-cards p {
+address {
     text-align: center;
-    color: var(--whitecolor);
+    color: var(--color2);
 }
 #discover-cards .card {
     margin: 10px 10px;
-    background-color: var(--color1);
+    background-color: var(--backgroundColor2);
     padding: 6px;
-    border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 #discover-cards a {
@@ -577,16 +575,18 @@ address,
     justify-content: center;
     text-decoration: none;
     color: var(--blackcolor);
-    background-color: var(--backgroundColor1);
+    background-color: var(--color2);
     padding: 6px;
-    max-width: 200px;
+    max-width: 230px;
     margin: 10px auto;
     border-radius: 10px;
 }
 address,
 #discover-cards p {
+    font-family: var(--fontfamily2);
     margin: 10px auto;
     padding: 0 10px;
+    color: var(--color3);
 }
 #discover-cards figure {
     margin: 0;
