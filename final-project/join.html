@@ -34,7 +34,9 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Michroma&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -68,7 +70,7 @@
         <div class="join-sections-container">
             <section class="form-section">
                 <h2 class="call-to-act">Be part of our collective</h2>
-                <form method="get" action="thankyou.html" id="join-form">
+                <form method="get" action="../final-project/thankyou.html" id="join-form">
                     <fieldset>
                         <legend>Application Form</legend>
 
@@ -82,8 +84,8 @@
                         </label>
                         <label for="title">Your Music Genre / Style
                             <input type="text" id="title" name="title" autocomplete="organization-title"
-                                pattern="[A-Za-z\s\-]{7,}"
-                                title="Alpha characters, spaces, and hyphens only, at least 7 characters">
+                                pattern="[A-Za-z\s\-]{3,}"
+                                title="Alpha characters, spaces, and hyphens only, at least 3 characters">
                         </label>
                         <label for="email">Email Address*
                             <input type="email" id="email" name="email" required autocomplete="email"
@@ -140,18 +142,18 @@
                         <button class="benefit-btn" data-modal="modal-np">Show Benefits</button>
                     </div>
                     <div class="bronze-card">
-                        <h3>Bronze Membership</h3>
-                        <p class="price">$20 per month</p>
+                        <h3>Type 1 Membership</h3>
+                        <p class="price">$15 per month</p>
                         <button class="benefit-btn" data-modal="modal-bronze">Show Benefits</button>
                     </div>
                     <div class="silver-card">
-                        <h3>Silver Membership</h3>
-                        <p class="price">$40 per month</p>
+                        <h3>Type 2 Membership</h3>
+                        <p class="price">$30 per month</p>
                         <button class="benefit-btn" data-modal="modal-silver">Show Benefits</button>
                     </div>
                     <div class="gold-card">
-                        <h3>Gold Membership</h3>
-                        <p class="price">$70 per month</p>
+                        <h3>Type 3 Membership</h3>
+                        <p class="price">$50 per month</p>
                         <button class="benefit-btn" data-modal="modal-gold">Show Benefits</button>
                     </div>
                 </div>
@@ -165,7 +167,7 @@
             <div class="modal-body">
                 <p><strong>Benefits include:</strong></p>
                 <ul>
-                    <li>Access to community events</li>
+                    <li>Community event notifications</li>
                     <li>Basic organization directory listing</li>
                     <li>Newsletter subscription</li>
                 </ul>
@@ -175,7 +177,7 @@
 
         <dialog id="modal-bronze">
             <div class="modal-header">
-                <h3>Bronze Membership</h3>
+                <h3>Type 1 Membership</h3>
                 <button class="close-modal">&times;</button>
             </div>
             <div class="modal-body">
@@ -185,42 +187,42 @@
                     <li>10% discount on event tickets</li>
                     <li>Training workshop invitations</li>
                 </ul>
-                <p class="cost"><strong>COST:</strong> $20 per month</p>
+                <p class="cost"><strong>COST:</strong> $15 per month</p>
             </div>
         </dialog>
 
         <dialog id="modal-silver">
             <div class="modal-header">
-                <h3>Silver Membership</h3>
+                <h3>Type 2 Membership</h3>
                 <button class="close-modal">&times;</button>
             </div>
             <div class="modal-body">
                 <p><strong>Benefits include:</strong></p>
                 <ul>
-                    <li>All Bronze benefits</li>
-                    <li>Featured placement in business directory</li>
+                    <li>All type 1 membership benefits</li>
+                    <li>Featured contact in the business directory</li>
                     <li>20% discount on event tickets</li>
-                    <li>Social media spot publication</li>
+                    <li>Advertising on social media</li>
                 </ul>
-                <p class="cost"><strong>COST:</strong> $40 per month</p>
+                <p class="cost"><strong>COST:</strong> $30 per month</p>
             </div>
         </dialog>
 
         <dialog id="modal-gold">
             <div class="modal-header">
-                <h3>Gold Membership</h3>
+                <h3>Type 3 Membership</h3>
                 <button class="close-modal">&times;</button>
             </div>
             <div class="modal-body">
                 <p><strong>Benefits include:</strong></p>
                 <ul>
-                    <li>All Silver benefits</li>
+                    <li>All type 2 membership benefits</li>
                     <li>Home Page Spotlight Position</li>
-                    <li>Free entrance to all special network events</li>
-                    <li>Free promotional booth at annual fair</li>
-                    <li>Mayor's recognition plaque</li>
+                    <li>Free entrance to all special events</li>
+                    <li>Equipment loan for personal events:</li>
+                    <li>speakers, consoles, etc.</li>
                 </ul>
-                <p class="cost"><strong>COST:</strong> $70 per month</p>
+                <p class="cost"><strong>COST:</strong> $50 per month</p>
             </div>
         </dialog>
     </main>

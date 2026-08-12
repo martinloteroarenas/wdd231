@@ -11,42 +11,42 @@ const showElement = document.querySelector('#results');
 if (showElement) {
     showElement.innerHTML = `
         <div class="info-card">
-            <h3>APPLICANT NAME:</h3>
+            <h3>Applicant name:</h3>
             <p>${getValue('fname')} ${getValue('lname')}</p>
         </div>
 
         <div class="info-card">
-            <h3>ORGANIZATIONAL TITLE:</h3>
+            <h3>Applicant music genre:</h3>
             <p>${getValue('title')}</p>
         </div>
 
         <div class="info-card">
-            <h3>EMAIL ADDRESS:</h3>
+            <h3>Email address:</h3>
             <p>${getValue('email')}</p>
         </div>
 
         <div class="info-card">
-            <h3>MOBILE PHONE:</h3>
+            <h3>Mobile phone:</h3>
             <p>${getValue('phone')}</p>
         </div>
 
         <div class="info-card">
-            <h3>BUSINESS / ORGANIZATION:</h3>
+            <h3>Stage name:</h3>
             <p>${getValue('organization')}</p>
         </div>
 
         <div class="info-card">
-            <h3>MEMBERSHIP LEVEL SELECTED:</h3>
+            <h3>Membership type selected:</h3>
             <p>${getValue('membershipLevel')}</p>
         </div>
 
         <div class="info-card">
-            <h3>APPLICATION DATE & TIME:</h3>
+            <h3>Application Date & time:</h3>
             <p>📅 ${getValue('timestamp')}</p>
         </div>
 
         <div class="info-card full-width">
-            <h3>BUSINESS DESCRIPTION:</h3>
+            <h3>Applicant background:</h3>
             <p>${getValue('description', 'No description provided.')}</p>
         </div>
     `;

@@ -10,12 +10,10 @@
     --color3: #eab6ff;
     --backgroundColor2: #252525;
 }
-
 * {
     font-family: var(--fontfamily1);
     box-sizing: border-box;
 }
-
 /*----------------Hamburger Navigation-----------------------------*/
 .hamburger {
     background: none;
@@ -25,18 +23,15 @@
     background-color: var(--backgroundColor2);
     border: solid 3px var(--color2);
 }
-
 .hamburger::before {
     content: "\2630";
     font-weight: lighter;
     font-size: xx-large;
 }
-
 .hamburger.show::before {
     content: "\00D7";
     font-weight: 900;
 }
-
 /*-----------------Header------------------------------------*/
 header {
     display: grid;
@@ -46,39 +41,32 @@ header {
     column-gap: 8px;
     background-color: var(--backgroundColor2);
 }
-
 header img {
     display: block;
     width: 100%;
     height: auto;
     padding: 0;
 }
-
 header span {
     font-family: var(--fontfamily1);
     font-size: 1.2rem;
     color: var(--color2);
 }
-
 #hide-menu {
     display: none;
 }
-
 #hide-menu.show-menu {
     display: block;
 }
-
 header>div {
     grid-column: 1 / -1;
     width: 89%;
 }
-
 li {
     list-style: none;
     display: flex;
     justify-content: center;
 }
-
 li a {
     font-family: var(--fontfamily2);
     text-decoration: none;
@@ -89,44 +77,36 @@ li a {
     font-weight: 600;
     border-bottom: #ffe7e7 1px solid;
 }
-
 nav li :hover {
     background-color: var(--bluecolor);
 }
-
 .current {
     background-color: var(--blackcolor);
     border-bottom: var(--color2) 3px solid;
 }
-
 /*----------------------body-------------------------*/
 body {
     background-color: var(--backgroundColor2);
 }
-
 h1 {
     padding-left: 10px;
     padding-top: 10px;
     color: var(--color2);
     margin-bottom: 0;
 }
-
 .navigation li a {
     padding: 4px;
 }
-
 /*----------------------------------main----------------------------------*/
 main {
     background-color: var(--blackcolor);
     padding-bottom: 20px;
 }
-
 .toggle {
     display: block;
     margin: 20px auto;
     text-align: center;
 }
-
 .toggle a {
     background-color: var(--backgroundColor2);
     margin: 0 10px;
@@ -136,14 +116,12 @@ main {
     text-decoration: none;
     border-bottom: 3px solid var(--color2);
 }
-
 .card-container {
     background-color: var(--backgroundColor2);
     max-width: 300px;
     margin: 10px auto;
     padding: 6px;
 }
-
 .member-img,
 .card img {
     display: block;
@@ -153,45 +131,37 @@ main {
     margin: 0 auto;
     margin-top: 8px;
 }
-
 .card-container h2,
 p {
     text-align: center;
     margin: 0;
 }
-
 .card-container h2 {
     color: var(--color2);
     padding: 6px;
 }
-
 .card-container p {
     font-family: var(--fontfamily2);
     padding: 4px;
     color: var(--color3);
 }
-
 .build-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 10px;
 }
-
 .toggle .current {
     background-color: var(--blackcolor);
     border-bottom: none;
 }
-
 .toggle .current a {
     color: var(--color2);
 }
-
 #cards {
     max-width: 1000px;
     margin: 0 auto;
     min-height: 400px;
 }
-
 .instagram {
     display: flex;
     justify-content: center;
@@ -206,7 +176,6 @@ p {
     color: var(--blackcolor);
     padding-bottom: 3px;
 }
-
 /*---------------footer----------------------------*/
 footer {
     background-color: var(--backgroundColor2);
@@ -215,7 +184,6 @@ footer {
     display: block;
     max-width: 100%;
 }
-
 footer h3,
 footer p,
 footer span {
@@ -223,16 +191,13 @@ footer span {
     box-sizing: border-box;
     word-wrap: break-word
 }
-
 footer h2 {
     color: var(--color2);
 }
-
 footer p {
     font-family: var(--fontfamily2);
     color: var(--color3);
 }
-
 /*---------------------------------HOME PAGE-------------------------*/
 .hero-container {
     display: flex;
@@ -240,13 +205,11 @@ footer p {
     position: relative;
     margin: 4px;
 }
-
 .hero-container img {
     width: 100%;
     height: auto;
     margin: 10px;
 }
-
 .hero-text {
     font-size: 0.5rem;
     position: absolute;
@@ -254,7 +217,6 @@ footer p {
     top: 20%;
     max-width: 260px;
 }
-
 .hero-text a {
     border-radius: 10px;
     background-color: var(--color2);
@@ -265,7 +227,6 @@ footer p {
     text-decoration: none;
     color: var(--blackcolor);
 }
-
 .hero-text p {
     background-color: var(--blackcolor);
     margin: 10px;
@@ -274,7 +235,6 @@ footer p {
     color: var(--color3);
     font-family: var(--fontfamily2);
 }
-
 .moreartists {
     display: block;
     margin: 0 auto;
@@ -287,7 +247,6 @@ footer p {
     padding: 8px 8px 10px 8px;
     text-decoration: none;
 }
-
 /*---------------------------Home Sections------------------------------*/
 .home-sections {
     margin: 0 auto;
@@ -295,43 +254,35 @@ footer p {
     max-width: 90%;
     padding-bottom: 38px;
 }
-
 .current-events {
     background-color: var(--backgroundColor2);
 }
-
 .current-events h2 {
     color: var(--color2);
 }
-
 .current-events p {
     font-family: var(--fontfamily2);
     color: var(--color3);
 }
-
 /*----------------------------------Cards SPOTLIGHTS-------------------------------------*/
 .spotlights {
     color: var(--color2);
 }
-
 .spotlights h2 {
     color: var(--color2);
     margin-bottom: 0px;
 }
-
 #spotlights-container {
     max-width: 500px;
     margin: 0 auto;
     padding-bottom: 10px;
 }
-
 .spotlight-card {
     background-color: var(--backgroundColor2);
     color: var(--whitecolor);
     margin: 10px;
     padding: 10px;
 }
-
 .spotlight-card a {
     font-family: var(--fontfamily2);
     text-decoration: none;
@@ -340,43 +291,35 @@ footer p {
     border-radius: 6px;
     color: var(--blackcolor);
 }
-
 .spotlight-card p {
     font-family: var(--fontfamily2);
     margin-bottom: 12px;
     color: var(--color3);
 }
-
 .spotlight-card img {
     width: 90%;
 }
-
 .spotlight-card h3 {
     margin-top: 10px;
     color: var(--color2);
 }
-
 /*-------------------Join page------------------------*/
 .call-to-act {
     color: var(--color2);
     padding-left: 10px;
 }
-
 legend,
 .select-label {
     color: var(--color2);
 }
-
 label {
     font-family: var(--fontfamily2);
     color: var(--color3);
 }
-
 .radio-label {
     font-family: var(--fontfamily2);
     color: var(--color3);
 }
-
 #join-form {
     max-width: 90%;
     margin: 0 auto;
@@ -384,31 +327,25 @@ label {
     padding: 8px;
     border-radius: 10px;
 }
-
 fieldset {
     border: none;
 }
-
 fieldset label {
     display: block;
     margin-bottom: 1rem;
 }
-
 legend {
     font-weight: 600;
     margin: 10px auto;
 }
-
 .radio-label {
     margin-top: 10px;
 }
-
 fieldset label textarea {
     display: block;
     width: 80%;
     margin-top: 8px;
 }
-
 .submit-btn {
     display: block;
     margin: 0 auto;
@@ -421,11 +358,9 @@ fieldset label textarea {
     padding: 6px;
     border-radius: 6px;
 }
-
 .join-sections-container {
     margin-bottom: 18px;
 }
-
 /*------------------------cards section-----------------------*/
 .cards-section {
     background-color: var(--backgroundColor2);
@@ -437,11 +372,9 @@ fieldset label textarea {
     max-width: 90%;
     margin: 0 auto;
 }
-
 .cards-section h3 {
     text-align: center;
 }
-
 .cards-section div {
     margin: 0 auto;
     background-color: var(--color3);
@@ -453,7 +386,6 @@ fieldset label textarea {
     opacity: 0;
     animation: fadeInUp 0.8s ease-out forwards;
 }
-
 .benefit-btn {
     display: block;
     margin: 20px auto;
@@ -465,16 +397,13 @@ fieldset label textarea {
     background-color: var(--color2);
     color: var(--blackcolor);
 }
-
 .cards-section div h3 {
     margin: 10px;
 }
-
 .cards-section div h3,
 .cards-section div p {
     color: var(--blackcolor);
 }
-
 /*-------------------------dialog-------------------------*/
 dialog {
     border: 1px solid var(--color2);
@@ -484,27 +413,22 @@ dialog {
     max-width: 420px;
     background-color: var(--backgroundColor2);
 }
-
 dialog::backdrop {
     background-color: var(--blackcolor);
 }
-
 .modal-header {
     position: relative;
     padding: 1.5rem 1.5rem 0.5rem 1.5rem;
     text-align: center;
 }
-
 .modal-header h3 {
     margin: 0;
     font-size: 1.4rem;
     color: var(--color2);
 }
-
 .modal-body p {
     color: var(--color3);
 }
-
 .close-modal {
     position: absolute;
     top: 12px;
@@ -523,22 +447,18 @@ dialog::backdrop {
     justify-content: center;
     transition: background-color 0.2s, color 0.2s;
 }
-
 dialog ul {
     padding: 0;
     margin: 20px auto;
 }
-
 dialog ul li {
     font-family: var(--fontfamily2);
     color: var(--color3);
 }
-
 .modal-body .cost {
     margin-bottom: 14px;
     color: var(--color2);
 }
-
 /*------------------------ANIMACION-------------------*/
 @keyframes fadeInUp {
     from {
@@ -551,50 +471,50 @@ dialog ul li {
         transform: translateY(0);
     }
 }
-
 /*--------------thankyou-------------*/
 .application {
     text-align: center;
+    margin-bottom: 10px;
 }
-
 .summary-box {
     text-align: center;
-    background-color: var(--backgroundColor1);
+    background-color: var(--backgroundColor2);
     width: 70%;
     margin: 14px auto;
     border-radius: 10px;
     padding: 10px;
 }
-
 .summary-box h2 {
-    color: var(--color1);
+    color: var(--color3);
     margin-top: 4px;
 }
-
+.info-card h3{
+    color: var(--color2);
+}
 .info-card p {
+    font-family: var(--fontfamily2);
     overflow-wrap: break-word;
     word-break: break-word;
+    color: var(--color3);
 }
-
 .gratitude {
+    font-family: var(--fontfamily2);
     margin: 0 10px;
+    color: var(--color3);
 }
-
 .action-row {
     text-align: center;
     margin: 28px 0;
 }
-
 .btn-primary,
 .btn-secondary {
     text-decoration: none;
-    background-color: var(--color1);
-    color: var(--whitecolor);
+    background-color: var(--backgroundColor2);
+    color: var(--color2);
     padding: 8px 12px;
     margin: 20px 6px;
     border-radius: 8px;
 }
-
 /*--------------------------DISCOVER PAGE-------------------------*/
 .visitor-message {
     background-color: var(--backgroundColor1);
@@ -604,15 +524,12 @@ dialog ul li {
     font-weight: 500;
     text-align: center;
 }
-
 .discover-pereira {
     text-align: center;
 }
-
 .card1 {
     grid-area: card1;
 }
-
 .card2 {
     grid-area: card2;
 }
