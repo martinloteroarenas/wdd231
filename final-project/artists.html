@@ -7,7 +7,7 @@
 
     <meta name="description" content="A website where entrepreneurs interact eachother in a Network of Pereira">
     <meta name="author" content="Martin Lotero Arenas">
-    <title>The Rotto Techno Collective - Events</title>
+    <title>The Rotto Techno Collective - Artists</title>
 
     <link rel="icon" href="../final-project/rotto.ico">
 
@@ -16,17 +16,17 @@
     <meta property="og:title" content="Pereira Chamber Of Commerce" />
     <meta property="og:description"
         content="A website where entrepreneurs interact eachother in a Network of Pereira" />
-    <meta property="og:image" content="https://martinloteroarenas.github.io/wdd231/chamber/directory.html" />
+    <meta property="og:image" content="https://martinloteroarenas.github.io/wdd231/chamber/artists.html" />
     <meta property="og:url" content="https://www.facebook.com" />
 
     <!--scripts-->
+    <script src="../final-project/scripts/directory.js" defer></script>
     <script src="../final-project/scripts/date.js" defer></script>
-    <script src="../final-project/scripts/directory-navigation.js" defer></script>
-    <script type="module" src="../final-project/scripts/discover.js"></script>
+
     <!--styles-->
-    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../final-project/styles/normalize.css">
     <link rel="stylesheet" href="../final-project/styles/directory-small.css">
-    <link rel="stylesheet" href="../final-project/styles/directory-large.css">
+    <link rel="stylesheet" href="../final-project/styles/directory-large.css" media="print" onload="this.media='all'">
     <!--fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,7 +41,7 @@
 
 <body>
     <header>
-        <img src="../final-project/rotto.ico" alt="network logo">
+        <img src="../final-project/rotto.ico" alt="network logo" width="24" height="24" loading="eager">
         <span>The Rotto Techno Collective</span>
         <button id="ham-btn" class="hamburger" aria-label="open navigation menu"></button>
         <div>
@@ -51,14 +51,14 @@
                     <li>
                         <a href="../final-project/index.html">Home</a>
                     </li>
-                    <li>
-                        <a href="../final-project/directory.html">Directory</a>
-                    </li>
-                    <li>
-                        <a href="../final-project/join.html">Join</a>
-                    </li>
                     <li class="current">
-                        <a href="#">Discover</a>
+                        <a href="#">Artists</a>
+                    </li>
+                    <li>
+                        <a href="../final-project/events.html">Events</a>
+                    </li>
+                    <li>
+                        <a href="../final-project/join.html">Join Us</a>
                     </li>
                 </ul>
             </nav>
@@ -66,16 +66,18 @@
 
     </header>
     <main>
-        <div>
-            <h1 class="discover-pereira">Past and upcoming events</h1>
-            <h2 id="visitor-message" class="visitor-message"></h2>
+        <h1>Meet Our Artists</h1>
+        <div class="toggle">
+            <a id="list" href="#">LIST</a>
+            <a id="grid" href="#">GRID</a>
         </div>
-        <div id="discover-cards" class="cards-grid"></div>
+        <div id="cards">
+        </div>
     </main>
     <footer>
         <section>
             <div>
-                <h2>Pereira Chamber Of Commerce</h2>
+                <h2>The Rotto Techno Collective</h2>
                 <p>colombia risaralda pereira, e-mail: pereiraCommerce@gmailcom</p>
                 <p>(+57)3244602376</p>
             </div>

@@ -55,7 +55,7 @@ function displayItems(items) {
 
         const button = document.createElement("a");
         button.href = item.url;
-        button.textContent = "Show More Details";
+        button.textContent = "View the full set";
         button.target = "_blank";
         button.rel = "noopener noreferrer";
 
