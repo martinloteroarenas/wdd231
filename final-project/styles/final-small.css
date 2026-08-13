@@ -133,8 +133,7 @@ main {
     margin: 0 auto;
     margin-top: 8px;
 }
-.card-container h2,
-p {
+.card-container h2{
     text-align: center;
     margin: 0;
 }
