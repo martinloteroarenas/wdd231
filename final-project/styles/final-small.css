@@ -275,6 +275,7 @@ footer p {
 .card p, .card address{
     font-family: var(--fontfamily2);
     color: var(--color3);
+    margin: 10px 60px;
 }
 .card a{
     text-decoration: none;
