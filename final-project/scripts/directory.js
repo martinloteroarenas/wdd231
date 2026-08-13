@@ -74,7 +74,8 @@ const listButton = document.querySelector('#list');
 const gridButton = document.querySelector('#grid');
 const cardsFormat = document.querySelector('#cards');
 
-listButton.classList.add('current');
+gridButton.classList.add('current');
+cardsFormat.classList.add('build-grid');
 
 listButton.addEventListener('click', (e) => {
     e.preventDefault()
