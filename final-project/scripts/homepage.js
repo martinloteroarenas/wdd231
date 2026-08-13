@@ -1,4 +1,4 @@
-  import discoverData from '../data/items.mjs';    
+  import discoverData from './data/items.mjs';    
 /*-------------------------------TOP DJS------------------------------------------*/
 const spotlightsContainer = document.querySelector('#spotlights-container');
 const membersUrl = 'data/members.json';
