@@ -1,5 +1,5 @@
 /*-------------------------TARJETAS---------------------------*/
-import discoverData from 'final-project/data/items.mjs';
+import discoverData from '../final-project/data/items.mjs';
 
 /*---------------------message---------------------*/
 const messageElement = document.getElementById("visitor-message");
