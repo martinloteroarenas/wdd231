@@ -1,4 +1,5 @@
-/*-------------------------------SPOTLIGHTS------------------------------------------*/
+import discoverData from '/final-project/data/items.mjs';                 
+/*-------------------------------TOP DJS------------------------------------------*/
 const spotlightsContainer = document.querySelector('#spotlights-container');
 const membersUrl = 'data/members.json';
 
@@ -64,3 +65,54 @@ function displaySpotlights(members) {
   });
 }
 getSpotlights();
+/*--------------------------EVENTS CARDS---------------------------*/
+const eventsContainer = document.querySelector(".current-events");
+
+function displayHomeItems(items) {
+    if (!eventsContainer) return;
+
+    eventsContainer.innerHTML = "";
+
+    const mainHeading = document.createElement("h2");
+    mainHeading.textContent = "Next Events";
+    mainHeading.classList.add("nextevents");
+    eventsContainer.appendChild(mainHeading);
+
+    const topThreeItems = items.slice(0, 3);
+
+    topThreeItems.forEach((item, index) => {
+        const card = document.createElement("section");
+        card.classList.add("card", `card${index + 1}`);
+
+        const heading = document.createElement("h3");
+        heading.textContent = item.title;
+
+        const figure = document.createElement("figure");
+        const image = document.createElement("img");
+        image.src = item.photo;
+        image.alt = item.title;
+        image.loading = "lazy";
+        figure.appendChild(image);
+
+        const address = document.createElement("address");
+        address.textContent = `Address: ${item.address}`;
+
+        const description = document.createElement("p");
+        description.textContent = item.description;
+
+        const button = document.createElement("a");
+        button.href = item.url;
+        button.textContent = "View the full set";
+        button.target = "_blank";
+        button.rel = "noopener noreferrer";
+
+        card.appendChild(heading);
+        card.appendChild(figure);
+        card.appendChild(description);
+        card.appendChild(address);
+        card.appendChild(button);
+
+        eventsContainer.appendChild(card);
+    });
+}
+displayHomeItems(discoverData.items);

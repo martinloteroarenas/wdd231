@@ -238,15 +238,16 @@ footer p {
 }
 .moreartists {
     display: block;
-    margin: 0 auto;
+    margin: auto;
     text-align: center;
     background-color: var(--color2);
     max-width: 350px;
-    margin-top: 20px;
     border-radius: 8px;
     color: var(--blackcolor);
     padding: 8px 8px 10px 8px;
     text-decoration: none;
+    height: auto;
+
 }
 /*---------------------------Home Sections------------------------------*/
 .home-sections {
@@ -255,37 +256,58 @@ footer p {
     max-width: 90%;
     padding-bottom: 38px;
 }
-.current-events {
-    background-color: var(--backgroundColor2);
-}
-.current-events h2 {
+.nextevents{
     color: var(--color2);
 }
-.current-events p {
+.current-events {
+    border: 1px solid var(--color2);
+    margin: 5px;
+}
+.current-events section{
+    background-color: var(--backgroundColor2);
+}
+.card{
+    padding-bottom: 14px;
+}
+.card h3{
+    color: var(--color2);
+}
+.card p, .card address{
     font-family: var(--fontfamily2);
     color: var(--color3);
 }
+.card a{
+    text-decoration: none;
+    background-color: var(--color2);
+    color: var(--blackcolor);
+    border-radius: 6px;
+    padding: 0 8px 4px 8px;
+}
 /*----------------------------------Cards SPOTLIGHTS-------------------------------------*/
 .spotlights {
+    border: 1px solid var(--color2);
     color: var(--color2);
+    margin: 5px;
+    height: 40%;
 }
 .spotlights h2 {
     color: var(--color2);
     margin-bottom: 0px;
 }
 #spotlights-container {
-    max-width: 500px;
+    max-width: 600px;
     margin: 0 auto;
     padding-bottom: 10px;
 }
 .spotlight-card {
     background-color: var(--backgroundColor2);
     color: var(--whitecolor);
-    margin: 10px;
+    margin: 3px;
     padding: 10px;
 }
 .spotlight-card a {
     font-family: var(--fontfamily2);
+    font-size: small;
     text-decoration: none;
     background-color: var(--color2);
     padding: 6px;
@@ -508,7 +530,7 @@ dialog ul li {
     margin: 20px 6px;
     border-radius: 8px;
 }
-/*--------------------------DISCOVER PAGE-------------------------*/
+/*--------------------------EVENTS PAGE-------------------------*/
 .visitor-message {
     background-color: var(--blackcolor);
     color: var(--color2);

@@ -164,4 +164,8 @@
             "card4 card5 card5 card6"
             "card7 card7 card8 card8";
     }
+    .home-sections{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
