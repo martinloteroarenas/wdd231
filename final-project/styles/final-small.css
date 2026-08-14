@@ -200,6 +200,9 @@ footer p {
     font-family: var(--fontfamily2);
     color: var(--color3);
 }
+#video{
+    color: var(--color2);
+}
 /*---------------------------------HOME PAGE-------------------------*/
 .hero-container {
     display: flex;
